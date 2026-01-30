@@ -1,0 +1,1043 @@
+/* ============================================
+   SUNE PAGE SPECIFIC STYLES
+   ============================================ */
+
+/* SUNE - Card Base Styles */
+.sune-card {
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+  transition: box-shadow 0.2s ease;
+}
+
+.sune-card:active {
+  cursor: grabbing;
+}
+
+.sune-card.dragging {
+  cursor: grabbing;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 100 !important;
+}
+
+.sune-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sune-card-image {
+  line-height: 0;
+  position: relative;
+}
+
+.sune-card-image img,
+.sune-card-image video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sune-card-content {
+  padding: 20px;
+}
+
+.sune-card-content p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Overview Card - Below intro section */
+.sune-overview-card {
+  width: 100%;
+  max-width: 1400px;
+  margin: 50px auto 0;
+}
+
+.sune-overview-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================================
+   SUNE BRANDING SECTION - Olive/Green Background
+   ============================================ */
+
+.sune-branding-section {
+  background: #0003B5;
+  padding: 100px 50px;
+  position: relative;
+  overflow: visible;
+}
+
+.sune-branding-section .sune-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Section Header - White text */
+.sune-branding-section .section-header-project {
+  margin-bottom: 30px;
+}
+
+.sune-branding-section .section-title {
+  color: var(--color-light);
+  font-size: 57px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.sune-branding-section .barcode-short {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--color-light),
+    var(--color-light) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+}
+
+/* Text Block - White text */
+.sune-text-block {
+  max-width: 600px;
+}
+
+.sune-text-block p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--color-light);
+}
+
+/* Branding Row - Logo and Colour side by side */
+.sune-branding-row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+/* Logo Card */
+.sune-branding-section .logo-card {
+  width: 800px;
+  max-width: 100%;
+}
+
+.sune-branding-section .logo-card .sune-card-image {
+  padding: 0;
+}
+
+/* Colour Palette Card */
+.sune-branding-section .colour-palette-card {
+  width: 650px;
+  max-width: 100%;
+  margin-top: 100px;
+  margin-left: -50px;
+}
+
+.sune-branding-section .colour-palette-card .sune-card-image {
+  padding: 0;
+}
+
+/* Typography Row */
+.sune-typography-row {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+  margin-bottom: 40px;
+}
+
+.sune-branding-section .typography-card {
+  width: 450px;
+  max-width: 100%;
+  margin-left: -200px;
+  margin-top: -100px;
+}
+
+/* Fruit Elements Card */
+.sune-branding-section .elements-card {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+/* ============================================
+   SUNE FLAVOR SECTIONS
+   ============================================ */
+
+/* Mango Section - Top of gradient (Yellow to Orange) */
+.sune-mango-section {
+  background: linear-gradient(180deg, rgba(246, 202, 30, 0.5) 0%, rgba(237, 119, 65, 0.5) 100%);
+  padding: 100px 50px 50px 50px;
+}
+
+.sune-mango-section .sune-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Cherry Section - Middle of gradient (Orange to Magenta) */
+.sune-cherry-section {
+  background: linear-gradient(180deg, rgba(237, 119, 65, 0.5) 0%, rgba(227, 36, 100, 0.5) 50%, rgba(165, 26, 145, 0.5) 100%);
+  padding: 50px 50px;
+}
+
+.sune-cherry-section .sune-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sune-cherry-section .section-title,
+.sune-cherry-section .sune-text-block p {
+  color: var(--color-light);
+}
+
+.sune-cherry-section .barcode-short {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--color-light),
+    var(--color-light) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+}
+
+/* Grape Section - Bottom of gradient (Magenta to Purple) */
+.sune-grape-section {
+  background: linear-gradient(180deg, rgba(165, 26, 145, 0.5) 0%, rgba(103, 15, 190, 0.5) 100%);
+  padding: 50px 50px 100px 50px;
+}
+
+.sune-grape-section .sune-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sune-grape-section .section-title,
+.sune-grape-section .sune-text-block p {
+  color: var(--color-light);
+}
+
+.sune-grape-section .barcode-short {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--color-light),
+    var(--color-light) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+}
+
+/* Flavor Section Common Styles */
+.sune-flavor-title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Flavor Cards Grid */
+.sune-flavor-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+/* Packaging Card - Full Width */
+.sune-packaging-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Mockup Cards Row */
+.sune-mockup-row {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  align-items: flex-start;
+}
+
+/* Colour and Cap Row */
+.sune-colour-cap-row {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  align-items: flex-start;
+}
+
+/* Mango Section Cards */
+.sune-mango-graphics-card {
+  width: 400px;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+
+.sune-mango-graphics-card .sune-card-image {
+  padding: 20px;
+}
+
+.sune-mango-sachet-card {
+  width: 500px;
+  margin-top: -80px;
+  margin-left: 80px;
+}
+
+.sune-mango-colour-card {
+  width: 450px;
+  max-width: 100%;
+  flex-shrink: 0;
+  margin-top: -100px;
+  margin-left: -50px;
+}
+
+/* Colour Swatches */
+.sune-mango-colour-card .colour-swatches {
+  display: flex;
+  gap: 0;
+  height: 90px;
+  overflow: hidden;
+}
+
+.sune-mango-colour-card .colour-swatch {
+  flex: 1;
+  height: 100%;
+}
+
+/* Mango Cap Card */
+.sune-mango-cap-card {
+  width: 300px;
+  max-width: 100%;
+  flex-shrink: 0;
+  margin-top: -220px;
+  margin-left: 160px;
+}
+
+.sune-mango-cap-card .sune-card-image {
+  background: #F5E3B3;
+}
+
+/* Cherry Section Cards */
+.sune-cherry-graphics-card {
+  width: 400px;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+
+.sune-cherry-graphics-card .sune-card-image {
+  padding: 20px;
+}
+
+.sune-cherry-sachet {
+  width: 500px;
+  margin-top: -80px;
+  margin-left: 80px;
+}
+
+.sune-cherry-colour-card {
+  width: 450px;
+  max-width: 100%;
+  flex-shrink: 0;
+  margin-top: -100px;
+  margin-left: -50px;
+}
+
+/* Cherry Colour Swatches */
+.sune-cherry-colour-card .colour-swatches {
+  display: flex;
+  gap: 0;
+  height: 90px;
+  overflow: hidden;
+}
+
+.sune-cherry-colour-card .colour-swatch {
+  flex: 1;
+  height: 100%;
+}
+
+/* Cherry Cap Card */
+.sune-cherry-cap-card {
+  width: 300px;
+  max-width: 100%;
+  flex-shrink: 0;
+  margin-top: -220px;
+  margin-left: 160px;
+}
+
+.sune-cherry-cap-card .sune-card-image {
+  background: #F5C6D6;
+}
+
+/* Grape Section Cards */
+.sune-grape-graphics {
+  width: 400px;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+
+.sune-grape-graphics .sune-card-image {
+  padding: 20px;
+}
+
+.sune-grape-sachet {
+  width: 500px;
+  margin-top: -80px;
+  margin-left: 80px;
+}
+
+.sune-grape-colour-card {
+  width: 450px;
+  max-width: 100%;
+  flex-shrink: 0;
+  margin-top: -100px;
+  margin-left: -50px;
+}
+
+/* Grape Colour Swatches */
+.sune-grape-colour-card .colour-swatches {
+  display: flex;
+  gap: 0;
+  height: 90px;
+  overflow: hidden;
+}
+
+.sune-grape-colour-card .colour-swatch {
+  flex: 1;
+  height: 100%;
+}
+
+/* Grape Cap Card */
+.sune-grape-cap-card {
+  width: 300px;
+  max-width: 100%;
+  flex-shrink: 0;
+  margin-top: -220px;
+  margin-left: 160px;
+}
+
+.sune-grape-cap-card .sune-card-image {
+  background: #D6B8E8;
+}
+
+/* ============================================
+   SUNE OUTCOME SECTION
+   ============================================ */
+
+.sune-mockups-section {
+  background: var(--color-light);
+  padding: 100px 50px 50px 50px;
+}
+
+.sune-mockups-section .sune-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sune-mockups-grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  align-items: flex-start;
+}
+
+.sune-mockups-section .isometric-card {
+  flex: 1;
+}
+
+.sune-mockups-section .top-view-card {
+  flex: 1;
+  margin-top: -50px;
+  margin-left: 100px;
+}
+
+/* Reflection Row */
+.sune-reflection-row {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+.sune-reflection-left {
+  flex: 1;
+}
+
+.sune-reflection-left .sune-reflection-text {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0 0 16px 0;
+}
+
+.sune-reflection-left .sune-reflection-text:last-child {
+  margin-bottom: 0;
+}
+
+.sune-reflection-right {
+  flex: 0 0 500px;
+  max-width: 100%;
+}
+
+.sune-reflection-right .sune-card {
+  margin: 0;
+}
+
+/* Final 02 Card */
+.sune-mockups-section .top-view-card {
+  margin-top: 30px;
+  width: 800px;
+  max-width: 100%;
+}
+
+/* ============================================
+   SUNE SACHET PACKAGING SECTION
+   ============================================ */
+
+.sune-sachet-section {
+  background: var(--color-light);
+  padding: 100px 50px;
+}
+
+.sune-sachet-section .sune-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sune-sachet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.sune-sachet-card {
+  width: 100%;
+}
+
+/* ============================================
+   SUNE MASCOT SECTION
+   ============================================ */
+
+.sune-mascot-section {
+  background: var(--color-light);
+  padding: 100px 50px;
+}
+
+.sune-mascot-section .sune-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sune-mascot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.sune-mascot-card {
+  width: 100%;
+}
+
+/* ============================================
+   SUNE SOCIAL MEDIA SECTION
+   ============================================ */
+
+.sune-social-section {
+  background: var(--color-light);
+  padding: 100px 50px;
+}
+
+.sune-social-section .sune-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sune-social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.sune-social-card {
+    max-width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+/* Phone Mockup Row */
+.sune-phone-row {
+  margin-top: 50px;
+}
+
+.sune-phone-card {
+  width: 100%;
+}
+
+.sune-phone-card .sune-card-image {
+  background: #1a1a1a;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ============================================
+   SUNE REFLECTION SECTION
+   ============================================ */
+
+.sune-reflection-section {
+  background: var(--color-light);
+  padding: 100px 50px;
+}
+
+.sune-reflection-section .sune-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sune-reflection-layout {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.sune-reflection-left {
+  flex: 0 0 650px;
+}
+
+.sune-reflection-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sune-reflection-description {
+  margin-top: 30px;
+}
+
+.sune-reflection-description p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* ============================================
+   SUNE RESPONSIVE - Larger Screens
+   ============================================ */
+
+@media (min-width: 1400px) {
+  .sune-mockup-card-large {
+    width: 950px;
+  }
+
+  .sune-mockup-card-small {
+    width: 450px;
+    margin-top: 120px;
+  }
+
+  .sune-mockups-section .top-view-card {
+    margin-top: -50px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .sune-mockup-card-large {
+    width: 1000px;
+  }
+
+  .sune-mockup-card-small {
+    width: 500px;
+    margin-top: 150px;
+  }
+
+  .sune-reflection-left {
+    flex: 0 0 750px;
+  }
+
+}
+
+/* ============================================
+   SUNE RESPONSIVE - Smaller Screens
+   ============================================ */
+
+@media (max-width: 1024px) {
+  /* Disable card dragging on tablet/mobile */
+  .sune-card {
+    cursor: default;
+  }
+
+  .sune-card:active {
+    cursor: default;
+  }
+
+  .sune-branding-section .section-header-project {
+    margin-bottom: 50px;
+  }
+
+  .sune-flavor-title {
+    margin-bottom: 50px;
+  }
+
+  .sune-branding-section {
+    padding: 100px 50px;
+  }
+
+  .sune-mango-section {
+    padding: 100px 50px 50px 50px;
+  }
+
+  .sune-cherry-section {
+    padding: 50px;
+  }
+
+  .sune-grape-section {
+    padding: 50px 50px 100px 50px;
+  }
+
+  .sune-sachet-section {
+    padding: 100px 50px;
+  }
+
+  .sune-mockups-section {
+    padding: 100px 50px 50px 50px;
+  }
+
+  .sune-mascot-section {
+    padding: 100px 50px;
+  }
+
+  .sune-social-section {
+    padding: 100px 50px;
+  }
+
+  .sune-reflection-section {
+    padding: 100px 50px;
+  }
+
+  .sune-branding-row {
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .sune-branding-section .logo-card {
+    width: 100%;
+  }
+
+  .sune-branding-section .colour-palette-card {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sune-typography-row {
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 0;
+  }
+
+  .sune-branding-section .typography-card {
+    width: 500px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  .sune-text-block {
+    max-width: 100%;
+  }
+
+  .sune-flavor-cards-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .sune-reflection-row {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .sune-reflection-left {
+    max-width: 100%;
+  }
+
+  .sune-mockup-row {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .sune-colour-cap-row {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .sune-mockup-card-large,
+  .sune-mockup-card-small {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  /* Mango responsive */
+  .sune-mango-graphics-card,
+  .sune-mango-sachet-card,
+  .sune-mango-colour-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 0;
+  }
+
+  /* Cherry responsive */
+  .sune-cherry-graphics-card,
+  .sune-cherry-sachet,
+  .sune-cherry-colour-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 0;
+  }
+
+  /* Grape responsive */
+  .sune-grape-graphics,
+  .sune-grape-sachet,
+  .sune-grape-colour-card,
+  .sune-grape-cap-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 0;
+  }
+
+  /* Cap cards responsive */
+  .sune-mango-cap-card,
+  .sune-cherry-cap-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 0;
+  }
+
+  .sune-mockups-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .sune-mockups-section .isometric-card,
+  .sune-mockups-section .top-view-card {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: auto;
+  }
+
+  .sune-sachet-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sune-mascot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sune-social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sune-social-card {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  .sune-reflection-layout {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .sune-reflection-left {
+    flex: none;
+    width: 100%;
+  }
+
+  .sune-reflection-right {
+    justify-content: center;
+  }
+
+  .sune-reflection-description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sune-branding-section,
+  .sune-mango-section,
+  .sune-cherry-section,
+  .sune-grape-section,
+  .sune-sachet-section,
+  .sune-mockups-section,
+  .sune-mascot-section,
+  .sune-social-section,
+  .sune-reflection-section {
+    padding: 60px 20px;
+  }
+
+  .sune-flavor-title {
+    font-size: 28px;
+  }
+
+  .sune-phone-card .sune-card-image {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+}
+
+/* SUNE Responsive - Phone (480px) */
+@media (max-width: 480px) {
+  .sune-branding-section {
+    padding: 60px 30px;
+  }
+
+  .sune-mango-section {
+    padding: 60px 30px 30px 30px;
+  }
+
+  .sune-cherry-section {
+    padding: 30px;
+  }
+
+  .sune-grape-section {
+    padding: 30px 30px 60px 30px;
+  }
+
+  .sune-sachet-section {
+    padding: 60px 30px;
+  }
+
+  .sune-mockups-section {
+    padding: 60px 30px 30px 30px;
+  }
+
+  .sune-mascot-section {
+    padding: 60px 30px;
+  }
+
+  .sune-social-section {
+    padding: 60px 30px;
+  }
+
+  .sune-reflection-section {
+    padding: 60px 30px;
+  }
+
+  .sune-overview-card {
+    margin: 30px auto 0;
+  }
+
+  .sune-branding-layout {
+    gap: 30px;
+  }
+
+  .sune-branding-left {
+    gap: 30px;
+  }
+
+  .sune-branding-right {
+    gap: 30px;
+  }
+
+  .sune-flavor-layout {
+    gap: 30px;
+  }
+
+  .sune-flavor-left {
+    gap: 30px;
+  }
+
+  .sune-flavor-right {
+    gap: 30px;
+  }
+
+  .sune-reflection-layout {
+    gap: 30px;
+  }
+
+  .sune-reflection-cards {
+    gap: 30px;
+  }
+
+  .project-overview {
+    padding: 60px 30px 60px 30px;
+  }
+
+  .sune-branding-section .section-title {
+    font-size: 28px;
+  }
+
+  .sune-branding-section .section-header-project {
+    margin-bottom: 30px;
+  }
+
+  .sune-branding-row {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .section-header-project {
+    margin-bottom: 30px;
+  }
+
+  .sune-flavor-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .sune-mockup-row {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .sune-colour-cap-row {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .sune-reflection-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .sune-mockups-section .isometric-card {
+    width: 100%;
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  .sune-mockups-section .top-view-card {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: auto;
+  }
+
+  .sune-social-card {
+    margin-top: 30px;
+  }
+}

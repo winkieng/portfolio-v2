@@ -1,0 +1,617 @@
+/* ============================================
+   ZEN MAKER LAB PAGE SPECIFIC STYLES
+   ============================================ */
+
+/* Zen - Card Base Styles */
+.zen-card {
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+  transition: box-shadow 0.2s ease;
+}
+
+.zen-card:active {
+  cursor: grabbing;
+}
+
+.zen-card.dragging {
+  cursor: grabbing;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 100 !important;
+}
+
+.zen-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.zen-card-image {
+  line-height: 0;
+  position: relative;
+}
+
+.zen-card-image img,
+.zen-card-image video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.zen-card-content {
+  padding: 20px;
+}
+
+.zen-card-content p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ============================================
+   ZEN SECTION - Dark Background Layout
+   ============================================ */
+
+.zen-section {
+  background: var(--color-dark);
+  padding: 100px 50px;
+  position: relative;
+  overflow: visible;
+}
+
+.zen-section .zen-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Section Header - White text */
+.zen-section .section-header-project {
+  margin-bottom: 30px;
+}
+
+.zen-section .section-title {
+  color: var(--color-light);
+  font-size: 57px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.zen-section .barcode-short {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--color-light),
+    var(--color-light) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+}
+
+/* Text Block - White text */
+.zen-text-block {
+  max-width: 600px;
+}
+
+.zen-text-block p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--color-light);
+}
+
+/* Logo Card - Large */
+.zen-section .logo-card {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+/* Zen Cards Grid */
+.zen-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+/* Colour Palette Card */
+.zen-section .colour-palette-card {
+  width: 700px;
+  flex-shrink: 0;
+}
+
+/* Typeface Card */
+.zen-section .typeface-card {
+  width: 400px;
+  margin-top: -100px;
+  margin-left: 50px;
+}
+
+/* Magazine Intro Card in Overview */
+.magazine-intro-card {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* ============================================
+   ZEN MASCOT SECTION - Gary the Octopus
+   ============================================ */
+
+/* Cards Row Layout */
+.zen-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  align-items: flex-start;
+}
+
+/* Moodboard Card */
+.zen-section .moodboard-card {
+  width: 600px;
+  flex-shrink: 0;
+  margin-left: 50px;
+}
+
+/* Logo Card */
+.zen-section .logo-card {
+  width: 250px;
+  margin-top: -150px;
+  margin-left:30px;
+}
+
+/* Colour Card */
+.zen-section .colour-card {
+  width: 550px;
+  margin-top: -180px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+/* Mascot Perspectives Card */
+.zen-section .mascot-perspectives-card {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 50px;
+}
+
+/* Subtitle */
+.zen-subtitle {
+  color: var(--color-light);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* Dash Robot Subtitle - Extra spacing */
+.zen-subtitle-dash {
+  margin-top: 50px;
+}
+
+/* Dash Real Card */
+.zen-section .dash-real-card {
+  width: 500px;
+}
+
+/* Dash Card */
+.zen-section .dash-card {
+  width: 350px;
+  margin-top: -100px;
+  margin-left: auto;
+  margin-right: 80px;
+}
+
+/* Dash Perspectives Card */
+.zen-section .dash-perspectives-card {
+  width: 100%;
+  max-width: 800px;
+  margin-top: -50px;
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+/* ============================================
+   ZEN REFLECTION SECTION
+   ============================================ */
+
+.zen-reflection {
+  background: var(--color-light);
+  padding: 100px 50px 0 50px;
+}
+
+.zen-reflection .reflection-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.zen-reflection .section-title {
+  font-size: 57px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.zen-reflection .reflection-layout {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.zen-reflection .reflection-left {
+  flex: 0 0 650px;
+}
+
+.zen-reflection .reflection-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.zen-reflection .reflection-description {
+  margin-top: 30px;
+}
+
+.zen-reflection .reflection-description p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* ============================================
+   ZEN OUTCOME SECTION
+   ============================================ */
+
+/* Outcome Grid */
+.zen-outcome-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  align-items: flex-start;
+}
+
+/* Draft 01 Card */
+.zen-reflection .draft-01-card {
+  width: 500px;
+}
+
+/* Final 02 Card */
+.zen-reflection .final-02-card {
+  width: 600px;
+  margin-top: 80px;
+}
+
+/* Final 03 Card */
+.zen-reflection .final-03-card {
+  width: 500px;
+  margin-top: -50px;
+  margin-left: 100px;
+}
+
+/* Final 04 Card */
+.zen-reflection .final-04-card {
+  width: 550px;
+  margin-top: 150px;
+  margin-left: -100px;
+}
+
+/* ============================================
+   ZEN RESPONSIVE - Larger Screens
+   ============================================ */
+
+@media (min-width: 1400px) {
+  .zen-section .moodboard-card {
+    width: 450px;
+  }
+
+  .zen-section .logo-card {
+    width: 400px;
+  }
+
+  .zen-section .colour-card {
+    width: 450px;
+  }
+
+  .zen-section .mascot-perspectives-card {
+    max-width: 1000px;
+  }
+
+  .zen-section .dash-real-card {
+    width: 550px;
+  }
+
+  .zen-section .dash-card {
+    width: 400px;
+  }
+
+  .zen-section .dash-perspectives-card {
+    max-width: 900px;
+    margin-left: 120px;
+  }
+
+  .zen-reflection .draft-01-card {
+    width: 550px;
+  }
+
+  .zen-reflection .final-02-card {
+    width: 650px;
+  }
+
+  .zen-reflection .final-03-card {
+    width: 750px;
+  }
+
+  .zen-reflection .final-04-card {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .zen-section .moodboard-card {
+    width: 500px;
+  }
+
+  .zen-section .logo-card {
+    width: 450px;
+  }
+
+  .zen-section .colour-card {
+    width: 500px;
+  }
+
+  .zen-section .mascot-perspectives-card {
+    max-width: 1100px;
+  }
+
+  .zen-section .dash-real-card {
+    width: 600px;
+  }
+
+  .zen-section .dash-card {
+    width: 450px;
+  }
+
+  .zen-section .dash-perspectives-card {
+    max-width: 1000px;
+    margin-left: 150px;
+  }
+
+  .zen-reflection .draft-01-card {
+    width: 600px;
+  }
+
+  .zen-reflection .final-02-card {
+    width: 700px;
+    margin-top: 100px;
+  }
+
+  .zen-reflection .final-03-card {
+    width: 800px;
+    margin-top: -70px;
+  }
+
+  .zen-reflection .final-04-card {
+    width: 550px;
+    margin-top: 120px;
+  }
+}
+
+/* ============================================
+   ZEN RESPONSIVE - Smaller Screens
+   ============================================ */
+
+@media (max-width: 1024px) {
+  /* Disable card dragging on tablet/mobile */
+  .zen-card {
+    cursor: default;
+  }
+
+  .zen-card:active {
+    cursor: default;
+  }
+
+  .zen-section {
+    padding: 100px 50px;
+  }
+
+  .zen-section .section-header-project {
+    margin-bottom: 50px;
+  }
+
+  .zen-text-block {
+    max-width: 100%;
+  }
+
+  /* Magazine Intro Card */
+  .magazine-intro-card {
+    max-width: 100%;
+  }
+
+  /* Cards Row */
+  .zen-cards-row {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /* Moodboard Card */
+  .zen-section .moodboard-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Logo Card */
+  .zen-section .logo-card {
+    margin-top: 0;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  /* Colour Card */
+  .zen-section .colour-card {
+    margin-top: 0;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  /* Mascot Perspectives Card */
+  .zen-section .mascot-perspectives-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Dash Robot Subtitle */
+  .zen-subtitle-dash {
+    margin-top: 50px;
+  }
+
+  /* Dash Card */
+  .zen-section .dash-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  /* Dash Real Card */
+  .zen-section .dash-real-card {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Dash Perspectives Card */
+  .zen-section .dash-perspectives-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+
+  /* Reflection/Outcome Section */
+  .zen-reflection {
+    padding: 100px 50px 50px 50px;
+  }
+
+  /* Outcome Grid */
+  .zen-outcome-grid {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /* Draft 01 Card */
+  .zen-reflection .draft-01-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Final 02 Card */
+  .zen-reflection .final-02-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  /* Final 03 Card */
+  .zen-reflection .final-03-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  /* Final 04 Card */
+  .zen-reflection .final-04-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+/* Zen Responsive - Phone (480px) */
+@media (max-width: 480px) {
+  .zen-section {
+    padding: 60px 30px;
+  }
+
+  .zen-section .section-title {
+    font-size: 28px;
+  }
+
+  .zen-section .section-header-project {
+    margin-bottom: 30px;
+  }
+
+  /* Magazine Intro Card */
+  .magazine-intro-card {
+    margin-top: 30px;
+  }
+
+  /* Cards Row */
+  .zen-cards-row {
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  /* Logo Card */
+  .zen-section .logo-card {
+    max-width: 300px;
+  }
+
+  /* Colour Card */
+  .zen-section .colour-card {
+    max-width: 300px;
+  }
+
+  /* Mascot Perspectives Card */
+  .zen-section .mascot-perspectives-card {
+    margin-top: 30px;
+  }
+
+  .zen-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .zen-subtitle-dash {
+    margin-top: 30px;
+  }
+
+  /* Dash Card */
+  .zen-section .dash-card {
+    max-width: 300px;
+  }
+
+  /* Dash Real Card */
+  .zen-section .dash-real-card {
+    max-width: 100%;
+  }
+
+  /* Dash Perspectives Card */
+  .zen-section .dash-perspectives-card {
+    margin-top: 30px;
+  }
+
+  /* Reflection/Outcome Section */
+  .zen-reflection {
+    padding: 60px 30px 30px 30px;
+  }
+
+  .zen-reflection .section-title {
+    font-size: 28px;
+  }
+
+  /* Outcome Grid */
+  .zen-outcome-grid {
+    gap: 30px;
+    margin-top: 30px;
+  }
+}

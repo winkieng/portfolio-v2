@@ -1,0 +1,732 @@
+/* Profile Page Styles */
+
+/* Profile Hero */
+.profile-hero {
+  padding: 150px 50px 60px;
+  background: var(--color-light);
+}
+
+.profile-hero-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.profile-title {
+  font-family: 'Rono', 'Arial Black', sans-serif;
+  font-weight: 900;
+  font-size: clamp(60px, 10vw, 120px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+/* Bio Section */
+.profile-bio {
+  padding: 0 50px;
+  background: var(--color-light);
+}
+
+.bio-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.bio-image-card {
+  flex: 0 0 400px;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+}
+
+.bio-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bio-card-image {
+  aspect-ratio: 3 / 4;
+  background: var(--color-gray);
+}
+
+.bio-content {
+  flex: 1;
+  padding-top: 40px;
+}
+
+.bio-greeting {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bio-text p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Skills Section */
+.profile-skills {
+  padding: 100px 50px;
+  background: var(--color-light);
+}
+
+.skills-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.skill-card {
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+}
+
+.skill-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+}
+
+.skill-card-content {
+  padding: 30px;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list li {
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.skill-list li:last-child {
+  border-bottom: none;
+}
+
+/* Experience Section */
+.profile-experience {
+  padding: 100px 50px;
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+.experience-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.experience-list {
+  margin-top: 50px;
+}
+
+.experience-item {
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.experience-item:first-child {
+  padding-top: 0;
+}
+
+.experience-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 16px;
+}
+
+.experience-role {
+  font-size: 18px;
+  font-weight: 500;
+  flex: 0 0 600px;
+}
+
+.experience-company {
+  font-size: 16px;
+  flex: 1;
+}
+
+.experience-date {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.experience-desc {
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+  max-width: 600px;
+}
+
+/* Education Section */
+.profile-education {
+  padding: 100px 50px;
+  background: var(--color-light);
+}
+
+.education-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.education-cards {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.education-card {
+  flex: 1;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+}
+
+.education-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education-card-content {
+  padding: 30px;
+}
+
+.education-degree {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.education-school {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.education-year {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Interests Section */
+.profile-interests {
+  padding: 100px 50px;
+  background: var(--color-light);
+}
+
+.interests-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.interests-intro {
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Interests Layout */
+.interests-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.interests-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.interest-tag {
+  padding: 12px 24px;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  position: relative;
+}
+
+
+.interest-tag:hover {
+  background: #d0d0d0;
+  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='28'><rect width='60' height='28' rx='14' fill='%231a1a1a'/><text x='30' y='18' font-family='system-ui' font-size='11' font-weight='600' fill='white' text-anchor='middle'>CLICK</text></svg>") 30 14, pointer;
+}
+
+.interest-tag.is-active {
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+.tag-channel {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  font-weight: bold;
+  opacity: 0.5;
+  margin-right: 6px;
+}
+
+/* Retro TV */
+.retro-tv {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tv-body {
+  display: flex;
+  background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 50%, #0f0f0f 100%);
+  border: 2px solid #3a3a3a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.tv-screen-wrapper {
+  flex: 1;
+  padding: 20px;
+  padding-right: 15px;
+}
+
+.tv-screen {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: #1a1a1a;
+  border: 10px solid #535353;
+  border-radius: 100% / 15%;
+  overflow: hidden;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+/* TV Side Panel */
+.tv-side-panel {
+  width: 90px;
+  background: linear-gradient(180deg, #252525 0%, #1a1a1a 100%);
+  border-left: 1px solid #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 12px;
+  gap: 12px;
+}
+
+/* Knob container with dark background - rounded like reference */
+.tv-knob {
+  width: 50px;
+  height: 50px;
+  background: #a0a0a0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.8),
+    0 1px 2px rgba(255, 255, 255, 0.05);
+}
+
+/* The actual dial knob */
+.tv-knob::before {
+  content: '';
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 35% 35%, #4a4a4a, #2a2a2a 50%, #1a1a1a 100%);
+  border: 2px solid #3a3a3a;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.6),
+    inset 0 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+/* Dial indicator line */
+.tv-knob::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 2px;
+  height: 10px;
+  background: #5a5a5a;
+  transform: translateX(-50%);
+  border-radius: 1px;
+}
+
+.tv-speaker {
+  width: 60px;
+  height: 70px;
+  background: repeating-linear-gradient(
+    0deg,
+    #2a2a2a 0px,
+    #2a2a2a 2px,
+    #1a1a1a 2px,
+    #1a1a1a 4px
+  );
+  border-radius: 3px;
+  margin-top: auto;
+  border: 1px solid #3a3a3a;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* TV Feet */
+.tv-feet {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 0;
+}
+
+.tv-foot {
+  width: 25px;
+  height: 12px;
+  background: #1a1a1a;
+  border-radius: 0 0 4px 4px;
+}
+
+/* TV Static Effect */
+.tv-static {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: 2;
+  pointer-events: none;
+  background: #fff;
+}
+
+/* Scanlines */
+.tv-scanlines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(255, 255, 255, 0.08) 2px,
+    rgba(255, 255, 255, 0.08) 4px
+  );
+  z-index: 3;
+  pointer-events: none;
+  animation: scanlines-move 8s linear infinite;
+}
+
+@keyframes scanlines-move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* Channel Indicator */
+.tv-channel {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tv-channel.is-visible {
+  opacity: 1;
+}
+
+.tv-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.tv-image.is-visible {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .profile-title {
+    font-size: 120px;
+  }
+
+  .profile-bio {
+    padding: 0 50px 50px;
+    background: var(--color-light);
+  }
+
+  .bio-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .bio-image-card {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .bio-content {
+    padding-top: 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .experience-row {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .experience-role {
+    flex: none;
+    width: 100%;
+  }
+
+  .education-cards {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .experience-desc {
+    max-width: 700px;
+  }
+
+  .profile-education {
+    padding: 100px 50px 50px 50px;
+  }
+
+  .profile-interests {
+    padding: 50px 50px 100px;
+    background: var(--color-light);
+  }
+
+  .retro-tv {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .tv-side-panel {
+    width: 70px;
+    padding: 12px 10px;
+  }
+
+  .tv-knob {
+    width: 42px;
+    height: 42px;
+  }
+
+  .tv-knob::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tv-knob::after {
+    height: 8px;
+    top: 10px;
+  }
+
+  .tv-speaker {
+    width: 50px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 840px) {
+  .profile-title {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 834px) {
+  .profile-skills {
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-hero {
+    padding: 100px 30px 30px;
+  }
+
+  .profile-bio {
+    padding: 0 30px 30px;
+    background: var(--color-light);
+  }
+
+  .profile-title {
+    font-size: 60px;
+    margin-left: 10px;
+  }
+
+  .bio-greeting {
+    font-size: 20px;
+  }
+
+  .bio-container {
+    gap: 30px;
+  }
+
+  .bio-image-card {
+    max-width: 100%;
+  }
+
+  .profile-skills {
+    padding: 30px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .profile-experience {
+    padding: 60px 30px 60px 30px;
+  }
+
+  .experience-row {
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .experience-desc {
+    font-size: 13px;
+  }
+
+  .profile-education {
+    padding: 60px 30px 30px 30px;
+  }
+
+  .education-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .profile-interests {
+    padding: 30px 30px 60px 30px;
+  }
+
+  .interests-layout {
+    gap: 30px;
+  }
+
+  .interest-tag {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .retro-tv {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tv-screen-wrapper {
+    padding: 12px;
+    padding-right: 8px;
+  }
+
+  .tv-side-panel {
+    width: 50px;
+    padding: 12px 8px;
+    gap: 10px;
+  }
+
+  .tv-knob {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tv-knob::before {
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+  }
+
+  .tv-knob::after {
+    width: 14px;
+    height: 14px;
+  }
+
+  .tv-speaker {
+    width: 35px;
+    height: 50px;
+  }
+
+  .tv-feet {
+    width: 60%;
+  }
+
+  .tv-foot {
+    width: 25px;
+    height: 12px;
+  }
+}
+
+/* Scroll Fade-Up Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered delays for children */
+.fade-up-delay-1 { transition-delay: 0.1s; }
+.fade-up-delay-2 { transition-delay: 0.2s; }
+.fade-up-delay-3 { transition-delay: 0.3s; }
+.fade-up-delay-4 { transition-delay: 0.4s; }
+.fade-up-delay-5 { transition-delay: 0.5s; }

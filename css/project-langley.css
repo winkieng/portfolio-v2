@@ -1,0 +1,1276 @@
+/* ============================================
+   LANGLEY PAGE SPECIFIC STYLES
+   ============================================ */
+
+.overview-content {
+  gap: 50px;
+}
+
+/* Langley - Base Section Styles */
+.langley-section {
+  padding: 100px 50px 50px 50px;
+  width: 100%;
+}
+
+.langley-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.langley-title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.langley-top {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.langley-concept {
+  flex: 0 0 450px;
+  margin-bottom: 0;
+}
+
+.langley-concept p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.langley-cards-row {
+  display: flex;
+  gap: 60px;
+}
+
+.langley-cards-row .moodboard-card {
+  flex: 0 0 450px;
+}
+
+.langley-cards-row .langley-cards {
+  flex: 1;
+}
+
+.langley-cards {
+  position: relative;
+  height: 320px;
+  margin-top: 20px;
+}
+
+/* Langley - Card Base Styles */
+.langley-card {
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.langley-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.langley-card-image {
+  line-height: 0;
+}
+
+.langley-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Langley - Rebranding Section Layout */
+.langley-rebranding .langley-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.langley-rebranding .langley-col-left {
+  flex: 0 0 700px;
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.langley-rebranding .langley-col-right {
+  flex: 0 0 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow: visible;
+}
+
+.langley-rebranding .langley-text-block p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 8px;
+  max-width: 600px;
+}
+
+.langley-rebranding .langley-text-block p:first-child {
+  margin-bottom: 16px;
+}
+
+.langley-rebranding .langley-col-right .langley-text-block p {
+  max-width: 380px;
+  /* margin-left: 50px; */
+}
+
+.langley-rebranding .langley-col-left .langley-text-block:last-child p {
+  max-width: 500px;
+}
+
+/* Langley - Card Styles */
+.langley-rebranding .moodboard-card {
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  cursor: grab;
+  /* margin-left: 50px; */
+}
+
+.langley-rebranding .moodboard-card .langley-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.langley-rebranding .logo-exploration-card {
+  width: 100%;
+  max-width: 650px;
+  position: relative;
+  cursor: grab;
+}
+
+.langley-rebranding .logo-exploration-card .langley-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.langley-rebranding .final-logotype-card {
+  position: relative;
+  cursor: grab;
+  margin-left: -170px;
+}
+
+.langley-rebranding .final-logotype-card .langley-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.langley-rebranding .logo-kerning-card {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  cursor: grab;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.langley-rebranding .logo-kerning-card .langley-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.langley-rebranding .moodboard-card:active,
+.langley-rebranding .logo-exploration-card:active,
+.langley-rebranding .final-logotype-card:active,
+.langley-rebranding .logo-kerning-card:active {
+  cursor: grabbing;
+}
+
+.langley-rebranding .moodboard-card.dragging,
+.langley-rebranding .logo-exploration-card.dragging,
+.langley-rebranding .final-logotype-card.dragging,
+.langley-rebranding .logo-kerning-card.dragging {
+  cursor: grabbing;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+/* Langley - Comparison Card */
+.langley-rebranding .langley-comparison {
+  width: 100%;
+  max-width: 1200px;
+  margin: -50px auto 0;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.langley-rebranding .comparison-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.langley-rebranding .comparison-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.langley-rebranding .comparison-label {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-light);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  z-index: 20;
+  white-space: nowrap;
+}
+
+.langley-rebranding .comparison-slider {
+  position: relative;
+  height: 650px;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.langley-rebranding .comparison-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.langley-rebranding .comparison-after img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.langley-rebranding .comparison-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.langley-rebranding .comparison-before img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: cover;
+}
+
+.langley-rebranding .comparison-tag {
+  position: absolute;
+  bottom: 20px;
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  z-index: 5;
+  transition: opacity 0.2s ease;
+}
+
+.langley-rebranding .comparison-before .comparison-tag {
+  left: 20px;
+}
+
+.langley-rebranding .comparison-after .comparison-tag {
+  right: 20px;
+}
+
+.langley-rebranding .comparison-handle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--color-light);
+  transform: translateX(-50%);
+  z-index: 10;
+  cursor: ew-resize;
+}
+
+.langley-rebranding .comparison-handle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 50%;
+}
+
+.langley-rebranding .comparison-handle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 14px;
+  z-index: 1;
+}
+
+/* Langley - Visual Assets Layout (inside Rebranding Section) */
+.langley-rebranding .visual-assets-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 80px;
+}
+
+.langley-rebranding .visual-assets-left {
+  flex: 0 0 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.langley-rebranding .visual-assets-right {
+  flex: 0 0 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.langley-rebranding .visual-assets-layout .langley-text-block {
+  max-width: 450px;
+}
+
+.langley-rebranding .visual-assets-layout .langley-text-block p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.langley-rebranding .visual-assets-layout .langley-title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.langley-rebranding .graphics-card {
+  width: 100%;
+  /* max-width: 450px; */
+  cursor: grab;
+  position: relative;
+}
+
+.langley-rebranding .social-template-card {
+  width: 100%;
+  max-width: 350px;
+  cursor: grab;
+  position: relative;
+  margin-left: 50px;
+  margin-top: -50px;
+}
+
+
+.langley-rebranding .colour-card {
+  width: 100%;
+  max-width: 650px;
+  cursor: grab;
+  position: relative;
+}
+
+.langley-rebranding .typeface-card {
+  width: 100%;
+  max-width: 500px;
+  cursor: grab;
+  position: relative;
+  margin-left: 100px;
+}
+
+.langley-rebranding .icons-card {
+  width: 100%;
+  max-width: 550px;
+  cursor: grab;
+  position: relative;
+  margin-top: -50px;
+  margin-left: -70px;
+}
+
+.langley-rebranding .visual-assets-right .langley-text-block {
+  max-width: 700px;
+  margin-left: 50px;
+}
+
+/* Langley - Outcome Section */
+.langley-outcome {
+  padding: 100px 50px 50px 50px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.langley-outcome .outcome-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.langley-outcome .outcome-text {
+  flex: 0 0 600px;
+  position: relative;
+}
+
+.langley-outcome .outcome-description {
+  margin-bottom: 30px;
+}
+
+.langley-outcome .outcome-description p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.langley-outcome .outcome-cards {
+  flex: 0 0 auto;
+}
+
+.langley-outcome .gift-card {
+  width: 480px;
+  position: relative;
+  cursor: grab;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 50px;
+}
+
+.langley-outcome .gift-card:active {
+  cursor: grabbing;
+}
+
+.langley-outcome .gift-card.dragging {
+  cursor: grabbing;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+.langley-outcome .calendar-card {
+  width: 500px;
+  position: relative;
+  cursor: grab;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-left: -30px;
+}
+
+.langley-outcome .calendar-card .outcome-card-video {
+  background-color: #8B7355;
+}
+
+.langley-outcome .calendar-card .outcome-card-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.langley-outcome .calendar-card:active {
+  cursor: grabbing;
+}
+
+.langley-outcome .calendar-card.dragging {
+  cursor: grabbing;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+.langley-outcome .outcome-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.langley-outcome .outcome-card-image {
+  line-height: 0;
+}
+
+.langley-outcome .outcome-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.langley-outcome .outcome-gallery {
+  max-width: 1400px;
+  margin: -80px auto 0;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.langley-outcome .monitor-card {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  cursor: grab;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.langley-outcome .monitor-card:active {
+  cursor: grabbing;
+}
+
+.langley-outcome .monitor-card.dragging {
+  cursor: grabbing;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+/* Langley - Video Card Styles */
+.langley-card-video {
+  line-height: 0;
+}
+
+.langley-card-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Outcome Card Video */
+.outcome-card-video {
+  line-height: 0;
+}
+
+.outcome-card-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Langley - Reflection Section */
+.langley-reflection {
+  background: var(--color-light);
+  width: 100%;
+  overflow-x: hidden;
+    padding: 50px 50px 50px 50px;
+}
+
+.langley-reflection .reflection-layout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.langley-reflection .reflection-left {
+  flex: 0 0 650px;
+}
+
+.langley-reflection .reflection-description {
+  margin-top: 20px;
+}
+
+.langley-reflection .reflection-description p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.langley-reflection .reflection-right {
+  flex: 0 0 auto;
+}
+
+.langley-reflection .reflection-card {
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+}
+
+.langley-reflection .reflection-card:active {
+  cursor: default;
+}
+
+.langley-reflection .reflection-card.dragging {
+  cursor: grabbing;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+.langley-reflection .reflection-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.langley-reflection .reflection-card-image {
+  line-height: 0;
+}
+
+.langley-reflection .reflection-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.langley-reflection .reflection-card-video {
+  line-height: 0;
+}
+
+.langley-reflection .reflection-card-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.langley-reflection .instagram-post-card {
+  width: 450px;
+  margin-top: 30px;
+  cursor: default;
+}
+
+.langley-reflection .instagram-post-card:active {
+  cursor: default;
+}
+
+.langley-reflection .instagram-post-card .reflection-card-video {
+  overflow: hidden;
+}
+
+.langley-reflection .instagram-post-card .reflection-card-video video {
+  margin: -50px 0;
+}
+
+.langley-reflection .reels-card {
+  width: 100%;
+  /* max-width: 900px; */
+  margin-top: 50px;
+}
+
+/* Langley Responsive - Larger Screens */
+@media (min-width: 1400px) {
+  .langley-rebranding .langley-col-left {
+    flex: 0 0 800px;
+  }
+
+  .langley-rebranding .langley-col-right {
+    flex: 0 0 450px;
+  }
+
+  .langley-rebranding .logo-exploration-card {
+    max-width: 800px;
+  }
+
+  .langley-rebranding .moodboard-card {
+    max-width: 450px;
+  }
+
+  .langley-rebranding .langley-col-left .langley-text-block:last-child p {
+    max-width: 700px;
+  }
+
+  .langley-rebranding .langley-text-block p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+    max-width: 700px;
+  }
+
+  .langley-rebranding .langley-col-right .langley-text-block p {
+    max-width: 450px;
+  }
+
+  /* Visual Assets Layout - Larger Screens */
+  .langley-rebranding .visual-assets-left {
+    flex: 0 0 500px;
+  }
+
+  .langley-rebranding .visual-assets-right {
+    flex: 0 0 850px;
+  }
+
+  .langley-rebranding .graphics-card {
+    max-width: 500px;
+  }
+
+  .langley-rebranding .colour-card {
+    max-width: 800px;
+  }
+
+  .langley-rebranding .typeface-card {
+    max-width: 550px;
+    margin-left: 100px;
+  }
+
+  .langley-rebranding .icons-card {
+    max-width: 600px;
+    margin-left: -70px;
+  }
+
+  .langley-rebranding .social-template-card {
+    max-width: 380px;
+  }
+
+  /* Outcome Section - Larger Screens */
+  .langley-outcome .gift-card {
+    width: 550px;
+  }
+
+  .langley-outcome .calendar-card {
+    width: 550px;
+  }
+
+  .langley-outcome .monitor-card {
+    max-width: 1000px;
+  }
+
+  /* Reflection Section - Larger Screens */
+  .langley-reflection .reflection-left {
+    flex: 0 0 600px;
+  }
+
+  .langley-reflection .instagram-post-card {
+    width: 450px;
+  }
+
+  .langley-reflection .reels-card {
+    max-width: 1000px;
+  }
+
+    .overview-left {
+  flex: 0 0 600px;
+  max-width:600px;
+}
+
+.overview-right {
+  flex: 0 0 550px;
+  max-width: 550px;
+}
+}
+
+@media (min-width: 1600px) {
+
+  .langley-rebranding .langley-col-left {
+    flex: 0 0 900px;
+  }
+
+  .langley-rebranding .langley-col-right {
+    flex: 0 0 500px;
+  }
+
+  .langley-rebranding .logo-exploration-card {
+    max-width: 850px;
+  }
+
+  .langley-rebranding .moodboard-card {
+    max-width: 500px;
+  }
+
+  .langley-rebranding .langley-col-right .langley-text-block p {
+    max-width: 450px;
+  }
+
+  /* Visual Assets Layout - Extra Large Screens */
+  .langley-rebranding .visual-assets-left {
+    flex: 0 0 550px;
+  }
+
+  .langley-rebranding .visual-assets-right {
+    flex: 0 0 900px;
+  }
+
+  .langley-rebranding .graphics-card {
+    max-width: 550px;
+  }
+
+  .langley-rebranding .typeface-card {
+    max-width: 600px;
+  }
+
+  .langley-rebranding .icons-card {
+    max-width: 650px;
+  }
+
+  .langley-rebranding .social-template-card {
+    max-width: 400px;
+  }
+
+  /* Outcome Section - Extra Large Screens */
+  .langley-outcome .gift-card {
+    width: 600px;
+  }
+
+  .langley-outcome .calendar-card {
+    width: 600px;
+  }
+
+  .langley-outcome .monitor-card {
+    max-width: 1100px;
+  }
+
+  /* Reflection Section - Extra Large Screens */
+  .langley-reflection .reflection-left {
+    flex: 0 0 700px;
+  }
+
+  .langley-reflection .instagram-post-card {
+    width: 500px;
+  }
+
+  .langley-reflection .reels-card {
+    max-width: 1100px;
+  }
+
+}
+
+/* Langley Responsive - Medium Screens */
+@media (max-width: 1024px) {
+
+  /* Disable card dragging on tablet/mobile */
+  .langley-card,
+  .langley-reflection .reflection-card {
+    cursor: default;
+  }
+
+  .langley-card:active,
+  .langley-reflection .reflection-card:active {
+    cursor: default;
+  }
+
+  .langley-section {
+    padding: 100px 50px 100px 50px;
+  }
+
+  .langley-rebranding .langley-layout {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .langley-rebranding .langley-col-left,
+  .langley-rebranding .langley-col-right {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .langley-rebranding .langley-col-left {
+    gap: 50px;
+  }
+
+  .langley-rebranding .langley-col-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    align-items: flex-start;
+  }
+
+  .langley-rebranding .langley-col-right .moodboard-card {
+    flex: 0 0 500px;
+    max-width: 500px;
+    order: 1;
+  }
+
+  .langley-rebranding .langley-col-right .langley-text-block {
+    flex: 1;
+    min-width: 250px;
+    order: 2;
+    align-self: center;
+  }
+
+  .langley-rebranding .langley-col-right .final-logotype-card {
+    flex: 0 0 100%;
+    order: 3;
+  }
+
+  .langley-rebranding .langley-col-left .langley-text-block:last-child p {
+    max-width: 100%;
+  }
+
+  .langley-rebranding .langley-text-block p {
+    max-width: 100%;
+  }
+
+  .langley-rebranding .final-logotype-card {
+    margin-left: 0;
+  }
+
+  .langley-rebranding .logotype-card,
+  .langley-rebranding .colour-card {
+    max-width: 100%;
+    margin-left: 0;
+
+  }
+
+  .langley-rebranding .icons-card {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-top: 0px;
+  }
+
+  .langley-rebranding .social-template-card {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto 0;
+  }
+
+  .langley-rebranding .logo-exploration-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .langley-rebranding .logo-kerning-card {
+    width: 100%;
+    position: relative;
+    cursor: grab;
+    margin-top: 50px;
+    margin-left: 0;
+    max-width:100%;
+  }
+
+  .langley-rebranding .langley-comparison {
+    margin: 50px auto 0;
+  }
+
+  .langley-rebranding .comparison-slider {
+    height: 300px;
+  }
+
+  .langley-rebranding .comparison-after,
+  .langley-rebranding .comparison-before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  .langley-rebranding .comparison-after img,
+  .langley-rebranding .comparison-before img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Stack visual assets layout on tablet */
+  .langley-rebranding .visual-assets-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+
+  .langley-rebranding .visual-assets-left,
+  .langley-rebranding .visual-assets-right {
+    flex: none;
+    width: 100%;
+  }
+
+  .langley-rebranding .visual-assets-left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .langley-rebranding .visual-assets-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .langley-rebranding .visual-assets-right .langley-text-block {
+    margin-left: 0;
+  }
+
+  .langley-rebranding .visual-assets-layout .langley-text-block {
+    max-width: 100%;
+  }
+
+  .langley-rebranding .typeface-card {
+    margin: auto;
+    display: block;
+    max-width: 600px;
+  }
+
+  .langley-rebranding .icons-card {
+    margin-left: 0;
+
+  }
+
+  .langley-rebranding .langley-cards {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .langley-rebranding .langley-cards .langley-card {
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .langley-outcome .outcome-layout {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .langley-outcome .outcome-content {
+    flex-direction: column;
+  }
+
+  .langley-outcome .outcome-gallery {
+    margin: 50px auto 0;
+    padding: 0;
+  }
+
+  .langley-outcome .calendar-card {
+    margin-top: 0;
+  }
+
+  .langley-outcome .outcome-text {
+    flex: none;
+    width: 100%;
+  }
+
+  .langley-outcome .gift-card {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .langley-outcome .calendar-card {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .langley-outcome .outcome-cards {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .langley-outcome .outcome-description {
+    margin-bottom: 50px;
+  }
+
+  .langley-outcome .monitor-card {
+    max-width: 100%;
+}
+
+  .langley-outcome .outcome-cards .langley-card {
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .langley-reflection .reflection-layout {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .langley-reflection .reflection-left {
+    flex: none;
+    width: 100%;
+  }
+
+  .langley-reflection .reflection-right {
+    flex: none;
+    width: 100%;
+  }
+
+  .langley-reflection .instagram-post-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  
+
+  .langley-reflection .reels-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .langley-reflection .reflection-cards {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .langley-reflection .reflection-cards .langley-card {
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .langley-reflection .reflection-reels {
+    margin-top: 50px;
+  }
+}
+
+/* Langley Responsive - iPad Mini */
+@media (max-width: 900px) {
+  .langley-rebranding .langley-col-right .moodboard-card {
+    flex: 0 0 260px;
+    max-width: 260px;
+  }
+}
+
+/* Langley Responsive - Phone (480px) */
+@media (max-width: 480px) {
+  .langley-section {
+    padding: 60px 30px;
+    width: 100%;
+  }
+
+  .langley-title {
+    font-size: 20px;
+  }
+
+  .langley-rebranding .langley-layout {
+    gap: 30px;
+  }
+
+  .langley-rebranding .langley-col-left {
+    gap: 30px;
+  }
+
+  .langley-rebranding .langley-col-right {
+    gap: 30px;
+  }
+
+  .langley-rebranding .langley-col-right .moodboard-card {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .langley-rebranding .logo-kerning-card {
+    margin-top: 30px;
+  }
+
+  .langley-rebranding .langley-comparison {
+      margin-top : 30px;
+  }
+
+  .langley-rebranding .comparison-slider {
+    height: 200px;
+  }
+
+  .langley-rebranding .visual-assets-layout .langley-title {
+    font-size: 28px;
+  }
+
+  .langley-rebranding .visual-assets-layout {
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .langley-rebranding .visual-assets-left {
+    gap: 30px;
+  }
+
+  .langley-rebranding .social-template-card {
+    margin-top: 0;
+  }
+
+  .langley-rebranding .visual-assets-right {
+    gap: 30px;
+  }
+
+  .langley-outcome {
+    padding: 60px 30px 30px 30px;
+  }
+
+  .langley-outcome .outcome-description {
+    margin-bottom: 30px;
+  }
+
+  .langley-outcome .outcome-description p {
+    margin-bottom: 0;
+  }
+
+  .langley-outcome .outcome-content {
+    gap: 30px;
+  }
+
+  .langley-outcome .outcome-gallery {
+    margin-top: 30px;
+  }
+
+  .langley-reflection {
+    padding: 30px;
+  }
+
+  .langley-reflection .reflection-layout {
+    gap: 30px;
+  }
+
+  .langley-reflection .reflection-reels {
+    margin-top: 30px;
+  }
+}

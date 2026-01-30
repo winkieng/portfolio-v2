@@ -1,0 +1,828 @@
+/* ============================================
+   HOLLAND FESTIVAL PAGE SPECIFIC STYLES
+   ============================================ */
+
+
+
+/* Holland - Card Base Styles */
+.holland-card {
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+  transition: box-shadow 0.2s ease;
+}
+
+.holland-card:active {
+  cursor: grabbing;
+}
+
+.holland-card.dragging {
+  cursor: grabbing;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 100 !important;
+}
+
+.holland-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.holland-card-image {
+  line-height: 0;
+  position: relative;
+}
+
+.holland-card-image img,
+.holland-card-image video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.holland-card-content {
+  padding: 20px;
+}
+
+.holland-card-content p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ============================================
+   HOLLAND SECTION - Black Background Layout
+   ============================================ */
+
+.holland-section {
+  background: var(--color-dark);
+  padding: 100px 50px;
+  position: relative;
+  overflow: visible;
+}
+
+.holland-section .holland-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Section Header - White text */
+.holland-section .section-header-project {
+  margin-bottom: 30px;
+}
+
+.holland-section .section-title {
+  color: var(--color-light);
+  font-size: 57px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.holland-reflection .section-title {
+  font-size: 57px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.holland-section .barcode-short {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--color-light),
+    var(--color-light) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+}
+
+/* Final 01 Card - Large (outside grid) */
+.holland-section .final-01-card {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.holland-section .final-01-card .holland-card-image {
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.holland-section .final-01-card video {
+  width: 100%;
+  height: auto;
+}
+
+/* Holland Cards Grid */
+.holland-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+/* Colour Comparison Card */
+.holland-section .colour-comparison-card {
+  width: 100%;
+  max-width: 1000px;
+  cursor: default;
+}
+
+/* Comparison Slider Styles */
+.holland-section .comparison-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.holland-section .comparison-label {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-light);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 11px;
+  z-index: 10;
+  border: 1px solid var(--color-dark);
+  white-space: nowrap;
+}
+
+.holland-section .comparison-slider {
+  position: relative;
+  height: 700px;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.holland-section .comparison-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.holland-section .comparison-after img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.holland-section .comparison-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 57%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.holland-section .comparison-before img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+
+.holland-section .comparison-tag {
+  position: absolute;
+  bottom: 20px;
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  transition: opacity 0.2s ease;
+}
+
+.holland-section .comparison-before .comparison-tag {
+  left: 20px;
+}
+
+.holland-section .comparison-after .comparison-tag {
+  right: 20px;
+}
+
+.holland-section .comparison-handle {
+  position: absolute;
+  left: 57%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-light);
+  transform: translateX(-50%);
+  z-index: 3;
+  cursor: ew-resize;
+}
+
+.holland-section .comparison-handle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 50%;
+}
+
+.holland-section .comparison-handle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  z-index: 1;
+}
+
+.comparison-tag-pill {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  border: 1px solid var(--color-dark);
+}
+
+.comparison-tag-pill.white {
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+.comparison-tag-pill.black {
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+.comparison-info {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.comparison-tag-pill.ratio {
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+/* Text Block - White text */
+.holland-text-block {
+  max-width: 600px;
+}
+
+.holland-text-block p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--color-light);
+}
+
+/* Colour Palette Row */
+.holland-palette-row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+/* Colour Palette Card */
+.holland-section .colour-palette-card {
+  width: 700px;
+  flex-shrink: 0;
+}
+
+/* Side Cards Container */
+.holland-side-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Typeface Card */
+.holland-section .typeface-card {
+  width: 260px;
+  margin-top: -150px;
+  margin-left: 50px;
+}
+
+/* Explanation Card */
+.holland-section .explanation-card {
+  width: 400px;
+  margin-left: -100px;
+  margin-top: 150px;
+}
+
+/* Final Cards */
+.holland-section .final-02-card {
+  width: 900px;
+  margin-left: 150px;
+}
+
+.holland-section .final-03-card {
+  width: 400px;
+  margin-top: -100px;
+}
+
+.holland-section .final-04-card {
+  width: 900px;
+  margin-top: -250px;
+  margin-left: 200px;
+}
+
+/* ============================================
+   HOLLAND REFLECTION SECTION
+   ============================================ */
+
+.holland-reflection {
+  background: var(--color-light);
+  padding: 50px;
+}
+
+.holland-reflection .reflection-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.holland-reflection .reflection-layout {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.holland-reflection .reflection-left {
+  flex: 0 0 650px;
+}
+
+.holland-reflection .reflection-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.holland-reflection .reflection-description {
+  margin-top: 30px;
+}
+
+.holland-reflection .reflection-description p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* Final 05 Card in Reflection */
+.holland-reflection .final-05-card {
+  width: 380px;
+}
+
+/* Mockup Cards Row */
+.holland-reflection .mockup-cards {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Final 06 Card - Large landscape */
+.holland-reflection .final-06-card {
+  width: 1000px;
+  margin-top: -50px;
+}
+
+/* Final 07 Card - Overlapping */
+.holland-reflection .final-07-card {
+  width: 700px;
+  margin-top: 400px;
+  margin-left: -200px;
+}
+
+/* Ticket Card */
+.holland-reflection .ticket-card {
+  width: 600px;
+  margin-top: -150px;
+  margin-left: 100px;
+}
+
+/* Social Media Card */
+.holland-reflection .social-card {
+  width: 100%;
+  margin-top: 50px;
+  /* margin-left: 200px; */
+}
+
+/* ============================================
+   HOLLAND RESPONSIVE - Larger Screens
+   ============================================ */
+
+@media (min-width: 1400px) {
+  .holland-section .colour-palette-card {
+    width: 750px;
+  }
+
+  .holland-section .typeface-card {
+    width: 280px;
+  }
+
+  .holland-section .explanation-card {
+    width: 350px;
+  }
+
+  .holland-section .final-02-card {
+    width: 950px;
+    margin-left: 180px;
+  }
+
+  .holland-section .final-03-card {
+    width: 450px;
+    margin-top: -120px;
+  }
+
+  .holland-section .final-04-card {
+    width: 950px;
+    margin-top: -280px;
+    margin-left: 250px;
+  }
+
+  .holland-reflection .final-06-card {
+    width: 1050px;
+    margin-top: -60px;
+  }
+
+  .holland-reflection .final-07-card {
+    width: 750px;
+    margin-top: 420px;
+    margin-left: -220px;
+  }
+
+  .holland-reflection .ticket-card {
+    width: 650px;
+    margin-top: -170px;
+    margin-left: 120px;
+  }
+
+  .holland-reflection .social-card {
+    width: 100%;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .holland-section .colour-palette-card {
+    width: 800px;
+  }
+
+  .holland-section .typeface-card {
+    width: 300px;
+  }
+
+  .holland-section .explanation-card {
+    width: 380px;
+  }
+
+  .holland-section .final-02-card {
+    width: 1000px;
+    margin-left: 200px;
+  }
+
+  .holland-section .final-03-card {
+    width: 500px;
+    margin-top: -150px;
+  }
+
+  .holland-section .final-04-card {
+    width: 1000px;
+    margin-top: -300px;
+    margin-left: 300px;
+  }
+
+  .holland-reflection .reflection-left {
+    flex: 0 0 750px;
+  }
+
+  .holland-reflection .final-06-card {
+    width: 1100px;
+    margin-top: -70px;
+  }
+
+  .holland-reflection .final-07-card {
+    width: 800px;
+    margin-top: 450px;
+    margin-left: -250px;
+  }
+
+  .holland-reflection .ticket-card {
+    width: 700px;
+    margin-top: -180px;
+    margin-left: 140px;
+  }
+
+  .holland-reflection .social-card {
+    width: 100%;
+    margin-top: 70px;
+  }
+}
+
+/* ============================================
+   HOLLAND RESPONSIVE - Smaller Screens
+   ============================================ */
+
+@media (max-width: 1024px) {
+  /* Disable card dragging on tablet/mobile */
+  .holland-card {
+    cursor: default;
+  }
+
+  .holland-card:active {
+    cursor: default;
+  }
+
+  .holland-section {
+    padding: 100px 50px;
+  }
+
+  .holland-section .section-header-project {
+    margin-bottom: 50px;
+  }
+
+  .holland-section .final-01-card {
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .holland-section .final-01-card .holland-card-image {
+    height: auto;
+  }
+
+  .holland-palette-row {
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 0;
+  }
+
+  .holland-section .colour-comparison-card {
+    max-width: 100%;
+  }
+
+  .holland-section .comparison-after img {
+    width: 100%;
+    height: 101%;
+    object-fit: cover;
+  }
+
+  .holland-section .colour-palette-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .holland-side-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .holland-section .typeface-card {
+    margin-top: 0;
+    margin-left: 0;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 500px;
+  }
+
+  .holland-section .explanation-card {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .holland-text-block {
+    max-width: 100%;
+  }
+
+  .holland-cards-grid {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .holland-section .final-02-card {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .holland-section .final-03-card {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .holland-section .final-04-card {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .holland-reflection {
+    padding: 100px 50px 50px 50px;
+  }
+
+  .holland-reflection .reflection-layout {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .holland-reflection .reflection-left {
+    flex: none;
+    width: 100%;
+  }
+
+  .holland-reflection .reflection-description {
+    max-width: 100%;
+  }
+
+  .holland-reflection .reflection-right {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .holland-reflection .final-05-card {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .holland-reflection .final-06-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .holland-reflection .final-07-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .holland-reflection .ticket-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 50px;
+  }
+
+  .holland-reflection .social-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .holland-reflection .mockup-cards {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+/* Holland Responsive - Phone (480px) */
+@media (max-width: 480px) {
+  .holland-section {
+    padding: 60px 30px;
+  }
+
+  .holland-layout {
+    gap: 30px;
+  }
+
+  .holland-col-left {
+    gap: 30px;
+  }
+
+  .holland-col-right {
+    gap: 30px;
+  }
+
+  .holland-reflection {
+    padding: 60px 30px 30px 30px;
+  }
+
+  .holland-reflection .reflection-layout {
+    gap: 30px;
+  }
+
+  .holland-reflection .reflection-cards {
+    gap: 30px;
+  }
+
+  .holland-reflection .mockup-cards {
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .holland-reflection .final-07-card {
+    margin-bottom: 30px;
+  }
+
+  .holland-reflection .ticket-card {
+    margin: 0 auto 30px;
+  }
+
+  .holland-section .typeface-card {
+    margin-top: 0;
+    margin-left: 0;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 300px;
+  }
+
+  .holland-palette-row {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .section-header-project {
+    margin-bottom: 30px;
+  }
+
+  .project-overview {
+    padding: 60px 30px 60px 30px;
+  }
+
+  .holland-section .section-title {
+    font-size: 28px;
+  }
+
+  .holland-section .section-header-project {
+    margin-bottom: 30px;
+  }
+
+  .holland-section .final-01-card {
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .holland-side-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .holland-section .comparison-slider {
+    height: auto;
+  }
+
+  .holland-section .comparison-after,
+  .holland-section .comparison-before {
+    position: relative;
+    height: auto;
+  }
+
+  .holland-section .comparison-before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  .holland-section .comparison-after img,
+  .holland-section .comparison-before img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .holland-cards-grid {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .holland-reflection .section-title {
+    font-size: 28px;
+  }
+}
+
+

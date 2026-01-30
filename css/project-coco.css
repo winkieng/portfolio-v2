@@ -1,0 +1,939 @@
+/* ============================================
+   COCO PAGE SPECIFIC STYLES
+   ============================================ */
+
+/* CoCo - Drink Section Layout */
+.coco-page .drink-layout,
+.drink-layout {
+  display: flex;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.coco-page .drink-left,
+.drink-left {
+  flex: 0 0 450px;
+}
+
+.coco-page .drink-right,
+.drink-right {
+  flex: 1;
+}
+
+.coco-page .drink-top,
+.drink-top {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.coco-page .drink-top .drink-concept,
+.drink-top .drink-concept {
+  flex: 0 0 450px;
+  margin-bottom: 0;
+}
+
+.coco-page .drink-top .drink-approach,
+.drink-top .drink-approach {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.coco-page .drink-cards-row,
+.drink-cards-row {
+  display: flex;
+  gap: 60px;
+}
+
+.coco-page .drink-cards-row .moodboard-card,
+.drink-cards-row .moodboard-card {
+  flex: 0 0 450px;
+}
+
+.coco-page .drink-cards-row .drink-cards,
+.drink-cards-row .drink-cards {
+  flex: 1;
+}
+
+.coco-page .drink-info,
+.drink-info {
+  flex: 1;
+  max-width: 400px;
+}
+
+/* CoCo - Card Positioning */
+.coco-page .drink-cards,
+.drink-cards {
+  position: relative;
+  height: 320px;
+  margin-top: 20px;
+}
+
+/* CoCo - Moodboard card */
+.coco-page .moodboard-card,
+.moodboard-card {
+  width: 320px;
+  margin-top: 30px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.coco-page .moodboard-card .drink-card-image,
+.moodboard-card .drink-card-image {
+  line-height: 0;
+}
+
+.coco-page .moodboard-card .drink-card-image img,
+.moodboard-card .drink-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CoCo - Font card */
+.coco-page .drink-cards .font-card,
+.drink-cards .font-card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  z-index: 1;
+}
+
+.coco-page .font-card .drink-card-image,
+.font-card .drink-card-image {
+  line-height: 0;
+  height: auto;
+}
+
+.coco-page .font-card .drink-card-image img,
+.font-card .drink-card-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* CoCo - Colour card */
+.coco-page .drink-cards .colour-card,
+.drink-cards .colour-card {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 450px;
+  z-index: 2;
+}
+
+.coco-page .colour-card .drink-card-image,
+.colour-card .drink-card-image {
+  height: 80px;
+}
+
+.coco-page .colour-card .drink-card-image img,
+.colour-card .drink-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CoCo - Colour Swatches */
+.coco-page .colour-swatches,
+.colour-swatches {
+  display: flex;
+  gap: 0;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 0 0 4px 4px;
+}
+
+.coco-page .colour-swatch,
+.colour-swatch {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  height: 100%;
+}
+
+/* CoCo - Comparison Section */
+.coco-page .project-comparison,
+.project-comparison {
+  padding: 0px 50px;
+  background: var(--color-light);
+}
+
+.coco-page .comparison-card,
+.comparison-card {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+}
+
+.coco-page .comparison-card-header,
+.comparison-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coco-page .comparison-content,
+.comparison-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.coco-page .comparison-label,
+.comparison-label {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-light);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  z-index: 20;
+  white-space: nowrap;
+}
+
+.coco-page .comparison-slider,
+.comparison-slider {
+  position: relative;
+  height: 600px;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.coco-page .comparison-after,
+.comparison-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.coco-page .comparison-after img,
+.comparison-after img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coco-page .comparison-before,
+.comparison-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.coco-page .comparison-before img,
+.comparison-before img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: cover;
+}
+
+.coco-page .comparison-tag,
+.comparison-tag {
+  position: absolute;
+  bottom: 20px;
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  z-index: 5;
+  transition: opacity 0.2s ease;
+}
+
+.coco-page .comparison-before .comparison-tag,
+.comparison-before .comparison-tag {
+  left: 20px;
+}
+
+.coco-page .comparison-after .comparison-tag,
+.comparison-after .comparison-tag {
+  right: 20px;
+}
+
+.coco-page .comparison-handle,
+.comparison-handle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--color-light);
+  transform: translateX(-50%);
+  z-index: 10;
+  cursor: ew-resize;
+}
+
+.coco-page .comparison-handle::before,
+.comparison-handle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 50%;
+}
+
+.coco-page .comparison-handle span,
+.comparison-handle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 14px;
+  z-index: 1;
+}
+
+/* CoCo - Simulation Section */
+.coco-page .project-simulation,
+.project-simulation {
+  padding: 100px 50px;
+  background: var(--color-light);
+}
+
+.coco-page .simulation-content,
+.simulation-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+}
+
+.coco-page .simulation-header,
+.simulation-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coco-page .simulation-controls,
+.simulation-controls {
+  font-size: 12px;
+  color: var(--color-gray);
+}
+
+.coco-page .simulation-grid,
+.simulation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+.coco-page .simulation-card,
+.simulation-card {
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.coco-page .simulation-card-image,
+.simulation-card-image {
+  aspect-ratio: 9 / 16;
+  background: var(--color-gray);
+}
+
+.coco-page .simulation-nav,
+.simulation-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+}
+
+.coco-page .nav-dot,
+.nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-gray);
+}
+
+.coco-page .nav-dot.active,
+.nav-dot.active {
+  background: var(--color-dark);
+}
+
+/* CoCo - Reflection Section */
+.coco-page .project-reflection,
+.project-reflection {
+  padding: 100px 50px;
+  background: var(--color-light);
+}
+
+.coco-page .reflection-content,
+.reflection-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.coco-page .reflection-text,
+.reflection-text {
+  flex: 0 0 auto;
+  max-width: 500px;
+}
+
+.coco-page .reflection-description,
+.reflection-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.coco-page .reflection-description p,
+.reflection-description p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.coco-page .reflection-cards,
+.reflection-cards {
+  flex: 1;
+  position: relative;
+  height: 1000px;
+}
+
+.coco-page .reflection-card,
+.reflection-card {
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  /* width: 320px; */
+  position: absolute;
+  cursor: grab;
+  transition: box-shadow 0.2s ease;
+}
+
+.coco-page .reflection-card:active,
+.reflection-card:active {
+  cursor: grabbing;
+}
+
+.coco-page .reflection-card.dragging,
+.reflection-card.dragging {
+  cursor: grabbing;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 100 !important;
+}
+
+.coco-page .reflection-cards .reflection-card:nth-child(1),
+.reflection-cards .reflection-card:nth-child(1) {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.coco-page .reflection-cards .reflection-card:nth-child(2),
+.reflection-cards .reflection-card:nth-child(2) {
+  top: 100px;
+  right: 220px;
+  z-index: 2;
+}
+
+.coco-page .reflection-card-header,
+.reflection-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coco-page .reflection-card-image,
+.reflection-card-image {
+  aspect-ratio: 3 / 4;
+  background: var(--color-gray);
+  overflow: hidden;
+}
+
+.coco-page .reflection-card-image img,
+.reflection-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coco-page .reflection-gallery,
+.reflection-gallery {
+  max-width: 1400px;
+  margin: 40px auto 0;
+  padding: 0 50px;
+}
+
+/* CoCo - Social Media Section */
+.coco-page .project-social,
+.project-social {
+  padding: 50px 50px;
+  background: var(--color-light);
+}
+
+.coco-page .social-card,
+.social-card {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  position: relative;
+  z-index: 3;
+}
+
+.coco-page .social-card-header,
+.social-card-header {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coco-page .social-content,
+.social-content {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+}
+
+.coco-page .social-content video,
+.social-content video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.coco-page .social-content img,
+.social-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.coco-page .social-phone,
+.social-phone {
+  flex: 0 0 250px;
+}
+
+.coco-page .phone-mockup,
+.phone-mockup {
+  width: 250px;
+  height: 500px;
+  background: var(--color-dark);
+  border-radius: 30px;
+  position: relative;
+}
+
+.coco-page .phone-mockup::before,
+.phone-mockup::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 25px;
+  background: var(--color-light);
+  border-radius: 15px;
+}
+
+.coco-page .social-grid,
+.social-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.coco-page .social-post,
+.social-post {
+  background: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  aspect-ratio: 4 / 5;
+}
+
+/* ============================================
+   COCO RESPONSIVE STYLES
+   ============================================ */
+
+@media (max-width: 1024px) {
+  /* Remove margin-top from final-01-card on CoCo page */
+  .coco-page .final-01-card,
+  .final-01-card {
+    margin-top: 0;
+  }
+
+  /* Disable card dragging on tablet/mobile */
+  .coco-page .moodboard-card,
+  .moodboard-card,
+  .coco-page .font-card,
+  .font-card,
+  .coco-page .colour-card,
+  .colour-card,
+  .coco-page .reflection-card,
+  .reflection-card {
+    cursor: default;
+  }
+
+  .coco-page .moodboard-card:active,
+  .moodboard-card:active,
+  .coco-page .font-card:active,
+  .font-card:active,
+  .coco-page .colour-card:active,
+  .colour-card:active,
+  .coco-page .reflection-card:active,
+  .reflection-card:active {
+    cursor: default;
+  }
+
+  /* Remove padding bottom from outcome-gallery */
+  .coco-page .outcome-gallery,
+  .outcome-gallery {
+    padding-bottom: 0;
+  }
+
+  /* Comparison slider height */
+  .coco-page .comparison-slider,
+  .comparison-slider {
+    height: 400px;
+  }
+
+  .coco-page .drink-layout,
+  .drink-layout {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .coco-page .drink-left,
+  .drink-left {
+    flex: none;
+    width: 100%;
+  }
+
+  .coco-page .drink-top,
+  .drink-top {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .coco-page .drink-top .drink-concept,
+  .drink-top .drink-concept {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .coco-page .drink-top .drink-approach,
+  .drink-top .drink-approach {
+    max-width: 100%;
+  }
+
+  .coco-page .drink-info,
+  .drink-info {
+    max-width: 100%;
+  }
+
+  /* Moodboard and font side by side, colour on its own row */
+  .coco-page .drink-cards-row,
+  .drink-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: flex-start;
+  }
+
+  .coco-page .drink-cards-row .moodboard-card,
+  .drink-cards-row .moodboard-card {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+    margin-top: 0;
+  }
+
+  .coco-page .drink-cards-row .moodboard-card .drink-card-image,
+  .drink-cards-row .moodboard-card .drink-card-image {
+    overflow: hidden;
+  }
+
+  .coco-page .drink-cards-row .moodboard-card .drink-card-image img,
+  .drink-cards-row .moodboard-card .drink-card-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .coco-page .drink-cards,
+  .drink-cards {
+    position: relative;
+    height: auto;
+    display: contents;
+  }
+
+  .coco-page .drink-cards .font-card,
+  .drink-cards .font-card {
+    position: relative;
+    top: auto;
+    right: auto;
+    flex: 1;
+    width: auto;
+    margin: 0;
+  }
+
+  .coco-page .drink-cards .font-card .drink-card-image,
+  .drink-cards .font-card .drink-card-image {
+    overflow: hidden;
+  }
+
+  .coco-page .drink-cards .colour-card,
+  .drink-cards .colour-card {
+    position: relative;
+    top: auto;
+    left: auto;
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .coco-page .moodboard-card,
+  .moodboard-card {
+    width: auto;
+    max-width: none;
+  }
+
+  .coco-page .project-simulation,
+  .project-simulation {
+    padding: 80px 50px;
+  }
+
+  .coco-page .simulation-grid,
+  .simulation-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .coco-page .project-reflection,
+  .project-reflection {
+    padding: 80px 50px 0 50px;
+  }
+
+  .coco-page .reflection-content,
+  .reflection-content {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .coco-page .reflection-text,
+  .reflection-text {
+    flex: none;
+    width: auto;
+    max-width: none;
+  }
+
+  .coco-page .reflection-cards,
+  .reflection-cards {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .coco-page .reflection-card.final-04-card,
+  .reflection-card.final-04-card,
+  .coco-page .reflection-card.final-03-card,
+  .reflection-card.final-03-card {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: auto;
+    max-width: 500px;
+  }
+
+  .coco-page .reflection-description,
+  .reflection-description {
+    max-width: 100%;
+  }
+
+  .coco-page .project-social,
+  .project-social {
+    padding: 50px 50px;
+  }
+}
+
+/* CoCo Responsive - iPad Mini */
+@media (max-width: 900px) {
+  .coco-page .drink-cards-row .moodboard-card,
+  .drink-cards-row .moodboard-card {
+    flex: 0 0 260px;
+    max-width: 260px;
+  }
+
+  .coco-page .moodboard-card,
+  .moodboard-card {
+    max-width: 260px;
+  }
+}
+
+.mango-section {
+  padding:100px 50px 50px 50px;
+}
+
+.strawberry-section, .grape-section, .brown-sugar-section {
+  padding:50px 50px 50px 50px;
+}
+
+.matcha-section {
+  padding:50px 50px 100px 50px;
+}
+
+/* CoCo Responsive - Phone (480px) */
+@media (max-width: 480px) {
+  .section-header-project {
+    margin-bottom: 30px;
+  }
+
+  .drink-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .drink-final {
+    margin-top: 30px;
+  }
+
+  .outcome-content {
+    gap: 30px;
+  }
+
+  .outcome-gallery {
+    margin: 30px auto 0;
+  }
+
+  .project-outcome {
+    padding: 60px 30px 30px 30px;
+  }
+
+  .coco-page .drink-top,
+  .drink-top {
+    gap: 30px;
+  }
+
+  .coco-page .drink-cards-row,
+  .drink-cards-row {
+    gap: 30px;
+  }
+
+  .coco-page .drink-cards-row .moodboard-card,
+  .drink-cards-row .moodboard-card {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .coco-page .moodboard-card,
+  .moodboard-card {
+    max-width: 100%;
+  }
+
+  .coco-page .comparison-slider,
+  .comparison-slider {
+    height: 200px;
+  }
+
+  .coco-page .project-comparison,
+  .project-comparison {
+    padding: 0 30px;
+  }
+
+  .coco-page .project-simulation,
+  .project-simulation {
+    padding: 60px 30px;
+  }
+
+  .coco-page .simulation-grid,
+  .simulation-grid {
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .coco-page .project-reflection,
+  .project-reflection {
+    padding: 60px 30px 0 30px;
+  }
+
+  .coco-page .reflection-content,
+  .reflection-content {
+    gap: 30px;
+  }
+
+  .coco-page .reflection-cards,
+  .reflection-cards {
+    gap: 30px;
+  }
+
+  .coco-page .reflection-gallery,
+  .reflection-gallery {
+    padding: 0 30px;
+    margin-top: 30px;
+  }
+
+  .coco-page .project-social,
+  .project-social {
+    padding: 30px;
+  }
+
+  .mango-section {
+    padding: 60px 30px 30px 30px;
+  }
+
+  .strawberry-section,
+  .grape-section,
+  .brown-sugar-section {
+    padding: 30px;
+  }
+
+  .matcha-section {
+    padding: 30px 30px 60px 30px;
+  }
+
+  .reflection-card.final-04-card {
+    margin-top: 30px;
+  }
+}
