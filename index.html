@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winkie Ng | Visual Designer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/winkie-ng-w.svg">
+  <link rel="apple-touch-icon" href="images/winkie-ng-w.svg">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Winkie Ng is a visual designer based in Vancouver, BC specializing in UX/UI design, branding, and illustration. Creating meaningful digital experiences that connect with people.">
+  <meta name="keywords" content="visual designer, UX designer, UI designer, graphic designer, branding, illustration, Vancouver, BC, Canada, portfolio">
+  <meta name="author" content="Winkie Ng">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://winkieng.com/">
+  <meta property="og:title" content="Winkie Ng - Visual Designer">
+  <meta property="og:description" content="Visual designer based in Vancouver, BC specializing in UX/UI design, branding, and illustration.">
+  <meta property="og:image" content="https://winkieng.com/images/winkie-ng-full.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Winkie Ng - Visual Designer">
+  <meta name="twitter:description" content="Visual designer based in Vancouver, BC specializing in UX/UI design, branding, and illustration.">
+  <meta name="twitter:image" content="https://winkieng.com/images/winkie-ng-full.svg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://winkieng.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // Force scroll to top before page renders
+    if (history.scrollRestoration) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  </script>
+</head>
+<body>
+  <!-- Password Screen -->
+  <!-- <div class="password-screen" id="passwordScreen">
+    <div class="password-content">
+      <span class="password-label">ENTER PASSWORD</span>
+      <div class="password-input-container">
+        <input type="password" id="passwordInput" class="password-input" placeholder="••••••••" autocomplete="off">
+        <button type="button" id="passwordSubmit" class="password-submit">
+          <span class="btn-arrow-dark"></span>
+        </button>
+      </div>
+      <span class="password-error" id="passwordError">Incorrect password</span>
+    </div>
+  </div> -->
+
+  <!-- Loading Screen -->
+  <!-- <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-top">
+        <span class="loader-text">LOADING...</span>
+        <span class="loader-percent" id="loaderPercent">0%</span>
+      </div>
+      <div class="loader-bar-container">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Fixed CTA Buttons -->
+  <div class="cta-fixed">
+    <a href="#" class="btn btn-dark">Linkedin <span class="btn-arrow"></span></a>
+    <a href="#" class="btn btn-dark">Resume <span class="btn-arrow"></span></a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Fixed W Logo - shows when nav is fixed -->
+    <a href="#" class="nav-logo-fixed" id="navLogo">
+      <img src="images/winkie-ng-w.svg" alt="W" class="nav-logo-img">
+    </a>
+
+    <!-- Navigation - starts in hero, becomes fixed on scroll -->
+    <nav class="nav-scroll" id="nav">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="works.html" class="nav-link">Works</a>
+          <a href="profile.html" class="nav-link">Profile</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="playground.html" class="nav-link">Playground</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger Menu Button (tablet/mobile) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+      <div class="mobile-menu-content">
+        <a href="index.html" class="mobile-menu-link active">Home</a>
+        <a href="works.html" class="mobile-menu-link">Works</a>
+        <a href="profile.html" class="mobile-menu-link">Profile</a>
+        <a href="contact.html" class="mobile-menu-link">Contact</a>
+        <a href="playground.html" class="mobile-menu-link">Playground</a>
+      </div>
+    </div>
+
+    <h1 class="hero-name">Winkie Ng</h1>
+    <div class="hero-bottom-left">
+      <p class="hero-label">visual designer</p>
+      <p class="hero-label">from vancouver</p>
+      <div class="barcode"></div>
+    </div>
+
+    <!-- Cube Section with Controls -->
+    <div class="cube-section">
+      <div class="cube-reload" id="reloadCube">
+        <span>reload box</span>
+        <i class="fas fa-redo"></i>
+      </div>
+
+      <div class="hero-cube-container">
+        <div class="cube" id="cube">
+          <!-- <div class="cube-face front" data-project="Vancouver Aquarium" data-link="project-aquarium.html"><img src="images/placeholder-dark.png" alt="Vancouver Aquarium" class="placeholder-img placeholder-img-cube-front"></div> -->
+          <div class="cube-face front" data-project="Coco Fresh Tea & Juice" data-link="project-coco.html"><img src="images/coco/final_01.png" alt="Coco Fresh Tea & Juice" class="placeholder-img placeholder-img-cube-front"></div>
+          <div class="cube-face back" data-project="SUNÉ" data-link="project-sune.html"><img src="images/sune/cover.png" alt="SUNÉ" class="placeholder-img placeholder-img-cube-back"></div>
+          <div class="cube-face right" data-project="Langley Farm Market" data-link="project-langley.html"><img src="images/langley/cover.png" alt="Langley Farm Market" class="placeholder-img placeholder-img-cube-right"></div>
+          <div class="cube-face left" data-project="Holland Festival" data-link="project-holland.html"><img src="images/holland/final_03.png" alt="Holland Festival" class="placeholder-img placeholder-img-cube-left"></div>
+          <!-- <div class="cube-face top" data-project="Vancouver Academy of Ballroom Arts" data-link="project-aba.html"><img src="images/placeholder-dark.png" alt="Vancouver Academy of Ballroom Arts" class="placeholder-img placeholder-img-cube-top"></div> -->
+          <div class="cube-face top" data-project="21-21 Design Sight" data-link="project-2121.html"><img src="images/2121/cover.png" alt="21-21 Design Sight" class="placeholder-img placeholder-img-cube-top"></div>
+          <div class="cube-face bottom" data-project="Vancouver Aquarium" data-link="https://www.sfu.ca/siat/showcase/fall-2023-project-showcase/explore-the-projects/iat-438-aquaquest.html" data-external="true"><img src="images/aquarium/cover.png" alt="Vancouver Aquarium" class="placeholder-img placeholder-img-cube-bottom"></div>
+        </div>
+      </div>
+
+      <div class="cube-project-info">
+        <p class="project-name" id="projectName">Project Name</p>
+        <a href="#" class="project-link" id="projectLink">View More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scrolling Marquee -->
+  <section class="marquee">
+    <div class="marquee-content">
+      <span>Designing Experiences  &bull;  Crafting Visual Identities  &bull;  Creating Impact  &bull;  Designing Experiences  &bull;  Crafting Visual Identities  &bull;  Creating Impact  &bull;  Designing Experiences  &bull;  Crafting Visual Identities  &bull;  Creating Impact  &bull;</span>
+    </div>
+  </section>
+
+  <!-- Project Highlights -->
+  <section class="projects" id="work">
+    <div class="section-header">
+      <h1 class="section-title">Project Highlight<span class="blink">_</span></h1>
+      <div class="barcode-short"></div>
+    </div>
+
+    <div class="project-showcase">
+      <!-- Sticky display area -->
+      <div class="project-display">
+        <!-- Project navigation list -->
+        <div class="project-nav">
+          <div class="project-nav-item" data-index="0">
+            <span class="nav-number">1:</span>
+            <span class="nav-name">COCO FRESH TEA & JUICE</span>
+            <span class="nav-indicator"></span>
+          </div>
+          <div class="project-nav-item" data-index="1">
+            <span class="nav-number">2:</span>
+            <span class="nav-name">LANGLEY FARM MARKET</span>
+            <span class="nav-indicator"></span>
+          </div>
+          <div class="project-nav-item" data-index="2">
+            <span class="nav-number">3:</span>
+            <span class="nav-name">HOLLAND FESTIVAL</span>
+            <span class="nav-indicator"></span>
+          </div>
+        </div>
+
+        <!-- Background images -->
+        <div class="project-backgrounds">
+          <img src="images/coco/cover.png" alt="Coco Fresh Tea & Juice" class="project-bg active" data-index="0">
+          <img src="images/langley/cover.png" alt="Langley Farm Market" class="project-bg" data-index="1">
+          <img src="images/holland/cover.png" alt="Holland Festival" class="project-bg" data-index="2">
+        </div>
+
+        <!-- Horizontal scan line -->
+        <div class="project-scanline"></div>
+
+        <!-- Stacking info cards -->
+        <div class="project-cards-stack">
+          <div class="project-card-inner" data-index="0">
+            <div class="project-card-header">
+              <span class="highlight-label">highlight_01</span>
+              <!-- <span class="card-close">&times;</span> -->
+            </div>
+            <div class="project-card-content">
+              <h3 class="project-title">Coco Fresh Tea & Juice</h3>
+              <div class="project-tags">
+                <span class="tag">Visual Design</span>
+                <span class="tag">2023 Jul - 2024 Nov</span>
+              </div>
+              <p class="project-description">Designed a seasonal drink campaign featuring five themed posters and social media assets.</p>
+            </div>
+            <div class="project-card-footer">
+              <a href="project-coco.html" class="btn btn-dark btn-small">Enter <span class="btn-arrow"></span></a>
+              <div class="barcode-small"></div>
+            </div>
+          </div>
+
+          <div class="project-card-inner" data-index="1">
+            <div class="project-card-header">
+              <span class="highlight-label">highlight_02</span>
+              <!-- <span class="card-close">&times;</span> -->
+            </div>
+            <div class="project-card-content">
+              <h3 class="project-title">Langley Farm Market</h3>
+              <div class="project-tags">
+                <span class="tag">Branding</span>
+                <span class="tag">2024 May - Dec</span>
+              </div>
+              <p class="project-description">Refreshed the brand identity and designing social media content that boosted follower growth by over 16k.</p>
+            </div>
+            <div class="project-card-footer">
+              <a href="project-langley.html" class="btn btn-dark btn-small">Enter <span class="btn-arrow"></span></a>
+              <div class="barcode-small"></div>
+            </div>
+          </div>
+
+          <div class="project-card-inner" data-index="2">
+            <div class="project-card-header">
+              <span class="highlight-label">highlight_03</span>
+              <!-- <span class="card-close">&times;</span> -->
+            </div>
+            <div class="project-card-content">
+              <h3 class="project-title">Holland Festival</h3>
+              <div class="project-tags">
+                <span class="tag">Visual Design</span>
+                <span class="tag">2023 Sep - Oct</span>
+              </div>
+              <p class="project-description">Designed the 2023 Holland Festival's annual poster along with supporting visual assets for promotional use.</p>
+            </div>
+            <div class="project-card-footer">
+              <a href="project-holland.html" class="btn btn-dark btn-small">Enter <span class="btn-arrow"></span></a>
+              <div class="barcode-small"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll triggers -->
+      <div class="project-scroll-area">
+        <div class="project-scroll-item" data-index="0"></div>
+        <div class="project-scroll-item" data-index="1"></div>
+        <div class="project-scroll-item" data-index="2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- More Work Section -->
+  <section class="more-work">
+    <div class="section-header">
+      <h1 class="section-title">More Work<span class="blink">_</span></h1>
+      <div class="barcode-short"></div>
+    </div>
+
+    <div class="work-list">
+      <!-- <div class="work-item coming-soon">
+        <a href="#">
+          <div class="work-row">
+            <span class="work-name">Exzell Pharma</span>
+            <div class="work-tags">
+              <span class="tag">Graphic Design</span>
+              <span class="tag">2025 Mar - Present</span>
+            </div>
+            <div class="work-arrow"></div>
+          </div>
+          <div class="work-preview">
+            <img src="images/placeholder-dark.png" alt="Exzell Pharma Preview">
+          </div>
+        </a>
+      </div> -->
+      <!-- <div class="work-item coming-soon">
+        <a href="#">
+          <div class="work-row">
+            <span class="work-name">Vancouver Academy Ballroom of Arts</span>
+            <div class="work-tags">
+              <span class="tag">Website Design</span>
+              <span class="tag">2025 May - Sep</span>
+            </div>
+            <div class="work-arrow"></div>
+          </div>
+          <div class="work-preview">
+            <img src="images/placeholder-light.png" alt="ABA Festival Preview">
+          </div>
+        </a>
+      </div> -->
+      <!-- <div class="work-item coming-soon">
+        <a href="#">
+          <div class="work-row">
+            <span class="work-name">Paws Athletics</span>
+            <div class="work-tags">
+              <span class="tag">Graphic Design</span>
+              <span class="tag">2025 Apr - 2025 Jul</span>
+            </div>
+            <div class="work-arrow"></div>
+          </div>
+          <div class="work-preview">
+            <img src="images/placeholder-light.png" alt="Paws Athletics Preview">
+          </div>
+        </a>
+      </div> -->
+      <div class="work-item">
+        <a href="project-sune.html">
+          <div class="work-row">
+            <span class="work-name">SUNÉ</span>
+            <div class="work-tags">
+              <span class="tag">Visual Design</span>
+              <span class="tag">2023 Sep - 2024 Apr</span>
+            </div>
+            <div class="work-arrow"></div>
+          </div>
+          <div class="work-preview">
+            <img src="images/sune/cover.png" alt="SUNÉ Preview">
+          </div>
+        </a>
+      </div>
+      <div class="work-item">
+        <a href="https://www.sfu.ca/siat/showcase/fall-2023-project-showcase/explore-the-projects/iat-438-aquaquest.html" target="_blank">
+          <div class="work-row">
+            <span class="work-name">Vancouver Aquarium</span>
+            <div class="work-tags">
+              <span class="tag">UX/UI Design</span>
+              <span class="tag">2023 Sep - Dec</span>
+            </div>
+            <div class="work-arrow"></div>
+          </div>
+          <div class="work-preview">
+            <img src="images/aquarium/cover.png" alt="Vancouver Aqua rium Preview">
+          </div>
+        </a>
+      </div>
+      <div class="work-item">
+        <a href="project-2121.html">
+          <div class="work-row">
+            <span class="work-name">21_21 Design Sight</span>
+            <div class="work-tags">
+              <span class="tag">Visual Design</span>
+              <span class="tag">2023 Sep - 2023 Dec</span>
+            </div>
+            <div class="work-arrow"></div>
+          </div>
+          <div class="work-preview">
+            <img src="images/2121/cover.png" alt="21_21 Design Sight Preview">
+          </div>
+        </a>
+      </div>
+      <div class="work-item">
+        <a href="project-zen.html">
+          <div class="work-row">
+            <span class="work-name">Zen Maker Lab</span>
+            <div class="work-tags">
+              <span class="tag">Brand Design, Illustration</span>
+              <span class="tag">2023 Sep - 2023 Dec</span>
+            </div>
+            <div class="work-arrow"></div>
+          </div>
+          <div class="work-preview">
+            <img src="images/zen/cover.png" alt="Zen Maker Lab Preview">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="view-all">
+      <a href="works.html" class="btn btn-dark">View All <span class="btn-arrow"></span></a>
+    </div>
+  </section>
+
+  <!-- Profile Section -->
+  <!-- <section class="profile" id="profile">
+    <div class="profile-bg"></div>
+    <div class="profile-content">
+      <div class="section-header">
+        <h1 class="section-title">Profile<span class="blink">_</span></h1>
+        <div class="barcode-short"></div>
+      </div>
+      <div class="profile-info">
+        <h3 class="profile-headline">Design is what I do, Drawing is who I am</h3>
+        <p class="profile-bio">I'm a visual designer focusing on UX, branding, and illustration - crafting digital and print experiences that connect with people.<br><br>When I'm not designing, I'm usually sketching in cafes, letting ideas flow from my pencil onto paper.</p>
+        <div class="profile-buttons">
+          <a href="contact.html" class="btn btn-dark">More about me <span class="btn-arrow"></span></a>
+          <a href="#" class="btn btn-dark">Resume <span class="btn-arrow"></span></a>
+          <a href="playground.html" class="btn btn-dark">Playground <span class="btn-arrow"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="illustration-cards">
+      <div class="illustration-card illustration-hover-swap">
+        <div class="illustration-card-header">
+          <span class="illustration-label">illustration_01</span>
+          
+        </div>
+        <div class="illustration-placeholder">
+          <img src="images/playground/playground_15_colour.png" alt="Illustration 1" class="img-default">
+          <img src="images/playground/playground_15.png" alt="Illustration 1 B&W" class="img-hover">
+        </div>
+      </div>
+      <div class="illustration-card">
+        <div class="illustration-card-header">
+          <span class="illustration-label">illustration_02</span>
+          
+        <div class="illustration-placeholder">
+          <img src="images/playground/playground_18.png" alt="Illustration 2">
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <h1 class="footer-title">Thank you for your curiosity<span class="blink">_</span></h1>
+      <a href="contact.html" class="btn btn-light">Contact Me <span class="btn-arrow-dark"></span></a>
+    </div>
+    <div class="footer-bottom">
+      <div class="barcode"></div>
+      <p class="copyright">&copy; 2026 a personal creation - designed and coded by Winkie Ng. All right reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop"></a>
+
+  <script>
+    // Always start from top when loading page
+    window.scrollTo(0, 0);
+
+    // Password protection (only if password screen exists)
+    const passwordScreen = document.getElementById('passwordScreen');
+    const passwordInput = document.getElementById('passwordInput');
+    const passwordSubmit = document.getElementById('passwordSubmit');
+    const passwordError = document.getElementById('passwordError');
+    const correctPassword = 'wndesign';
+
+    if (passwordScreen && passwordInput && passwordSubmit) {
+      function checkPassword() {
+        if (passwordInput.value === correctPassword) {
+          passwordScreen.classList.add('hidden');
+          startLoading();
+        } else {
+          passwordInput.classList.add('error');
+          passwordError.classList.add('visible');
+          passwordInput.value = '';
+          setTimeout(() => {
+            passwordInput.classList.remove('error');
+            passwordError.classList.remove('visible');
+          }, 2000);
+        }
+      }
+
+      passwordSubmit.addEventListener('click', checkPassword);
+      passwordInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          checkPassword();
+        }
+      });
+
+      // Focus password input on load
+      passwordInput.focus();
+    }
+
+    // Loading screen animation
+    const loader = document.getElementById('loader');
+    const loaderBar = document.getElementById('loaderBar');
+    const loaderPercent = document.getElementById('loaderPercent');
+
+    let progress = 0;
+    let targetProgress = 0;
+    let loadingInterval;
+
+    // Smoothly animate progress towards target
+    function animateProgress() {
+      if (!loaderBar || !loaderPercent) return;
+      if (progress < targetProgress) {
+        progress += (targetProgress - progress) * 0.1;
+        if (targetProgress - progress < 0.5) progress = targetProgress;
+      }
+
+      loaderBar.style.width = progress + '%';
+      loaderPercent.textContent = Math.round(progress) + '%';
+
+      if (progress < 100) {
+        requestAnimationFrame(animateProgress);
+      }
+    }
+
+    // Flash animation when complete
+    function flashBar(times, callback) {
+      if (!loaderBar) { callback(); return; }
+      let count = 0;
+      const flashInterval = setInterval(() => {
+        loaderBar.style.opacity = loaderBar.style.opacity === '0' ? '1' : '0';
+        count++;
+        if (count >= times * 2) {
+          clearInterval(flashInterval);
+          loaderBar.style.opacity = '1';
+          callback();
+        }
+      }, 80);
+    }
+
+    // Start loading function (called after password is correct)
+    function startLoading() {
+      if (!loader) {
+        document.body.style.overflow = 'auto';
+        return;
+      }
+      loadingInterval = setInterval(() => {
+        targetProgress += Math.random() * 12 + 3;
+        if (targetProgress >= 100) {
+          targetProgress = 100;
+          clearInterval(loadingInterval);
+
+          // Flash 5 times then hide loader
+          setTimeout(() => {
+            flashBar(5, () => {
+              setTimeout(() => {
+                loader.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+              }, 200);
+            });
+          }, 300);
+        }
+      }, 200);
+
+      // Start smooth animation
+      animateProgress();
+    }
+
+    // If no password screen, start loading immediately or just enable scroll
+    if (!passwordScreen) {
+      if (loader) {
+        startLoading();
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+    } else {
+      // Prevent scrolling while loading
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Back to Top button
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('is-visible');
+      } else {
+        backToTop.classList.remove('is-visible');
+      }
+
+      // Check if back-to-top button is over the footer
+      const footer = document.querySelector('.footer');
+      const footerRect = footer.getBoundingClientRect();
+      const buttonRect = backToTop.getBoundingClientRect();
+
+      if (buttonRect.bottom > footerRect.top) {
+        backToTop.classList.add('light');
+      } else {
+        backToTop.classList.remove('light');
+      }
+    });
+
+    backToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Navbar: scrolls with page, becomes fixed when it reaches top
+    const nav = document.getElementById('nav');
+    const navLogo = document.getElementById('navLogo');
+    const navOffsetTop = nav.offsetTop;
+    const fixedTop = 20;
+
+    function handleScroll() {
+      const isScrolledPastHero = window.scrollY >= navOffsetTop - fixedTop;
+
+      if (isScrolledPastHero) {
+        nav.classList.add('is-fixed');
+        navLogo.classList.add('is-visible');
+      } else {
+        nav.classList.remove('is-fixed');
+        navLogo.classList.remove('is-visible');
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    // Dark section detection for fixed elements (logo and CTA buttons)
+    const ctaFixed = document.querySelector('.cta-fixed');
+    const darkSections = document.querySelectorAll('.footer, .holland-section, .langley-section, .profile-experience, [data-dark="true"]');
+
+    function checkDarkSections() {
+      const logoRect = navLogo.getBoundingClientRect();
+      const ctaRect = ctaFixed.getBoundingClientRect();
+
+      let logoInDark = false;
+      let ctaInDark = false;
+
+      darkSections.forEach(section => {
+        const sectionRect = section.getBoundingClientRect();
+
+        // Check if logo overlaps with dark section
+        if (logoRect.bottom > sectionRect.top && logoRect.top < sectionRect.bottom) {
+          logoInDark = true;
+        }
+
+        // Check if CTA buttons overlap with dark section
+        if (ctaRect.bottom > sectionRect.top && ctaRect.top < sectionRect.bottom) {
+          ctaInDark = true;
+        }
+      });
+
+      navLogo.classList.toggle('light', logoInDark);
+      ctaFixed.classList.toggle('light', ctaInDark);
+    }
+
+    window.addEventListener('scroll', checkDarkSections);
+    checkDarkSections();
+
+    // Cube rotation and drag handling
+    const cube = document.getElementById('cube');
+    const cubeContainer = document.querySelector('.hero-cube-container');
+    let isDragging = false;
+    let startX, startY;
+    let rotationX = -15;
+    let rotationY = 0;
+    let autoRotate = true;
+    let animationId;
+
+    // Momentum/velocity tracking
+    let velocityX = 0;
+    let velocityY = 0;
+    const friction = 0.92; // How quickly momentum slows down (0.95 = gradual, 0.8 = fast)
+    const minVelocity = 0.01; // Stop when velocity is this low
+
+    // Auto rotation
+    function animate() {
+      if (autoRotate) {
+        rotationY += 0.3; // Steady slow rotation
+        cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+      } else if (!isDragging && (Math.abs(velocityX) > minVelocity || Math.abs(velocityY) > minVelocity)) {
+        // Apply momentum when not dragging and not auto-rotating
+        rotationY += velocityY;
+        rotationX += velocityX;
+        velocityX *= friction;
+        velocityY *= friction;
+        cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+      }
+      animationId = requestAnimationFrame(animate);
+    }
+
+    // Stop CSS animation and use JS animation instead
+    cube.style.animation = 'none';
+    animate();
+
+    // Prevent image dragging inside cube
+    cube.querySelectorAll('img').forEach(img => {
+      img.draggable = false;
+    });
+
+    // Drag to rotate
+    let hasMoved = false;
+    let mouseDownX, mouseDownY;
+
+    cubeContainer.addEventListener('mousedown', (e) => {
+      e.preventDefault(); // Prevent default drag behavior
+      isDragging = true;
+      hasMoved = false;
+      autoRotate = false;
+      startX = e.clientX;
+      startY = e.clientY;
+      mouseDownX = e.clientX;
+      mouseDownY = e.clientY;
+      cubeContainer.style.cursor = 'grabbing';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+
+      const deltaX = e.clientX - startX;
+      const deltaY = e.clientY - startY;
+
+      // Check if mouse has moved enough to be considered a drag
+      if (Math.abs(e.clientX - mouseDownX) > 5 || Math.abs(e.clientY - mouseDownY) > 5) {
+        hasMoved = true;
+        cube.classList.add('dragging');
+      }
+
+      // Track velocity for momentum
+      velocityY = deltaX * 0.5;
+      velocityX = -deltaY * 0.5;
+
+      rotationY += velocityY;
+      rotationX += velocityX;
+
+      cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+
+      startX = e.clientX;
+      startY = e.clientY;
+    });
+
+    document.addEventListener('mouseup', () => {
+      if (isDragging) {
+        isDragging = false;
+        cubeContainer.style.cursor = 'grab';
+        cube.classList.remove('dragging');
+        // Reset hasMoved after a short delay to allow click event to check it first
+        setTimeout(() => {
+          hasMoved = false;
+        }, 10);
+        // Resume auto rotation after momentum stops or 2 seconds
+        setTimeout(() => {
+          autoRotate = true;
+          velocityX = 0;
+          velocityY = 0;
+        }, 2000);
+      }
+    });
+
+    // Touch support for mobile
+    cubeContainer.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      autoRotate = false;
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+    });
+
+    document.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+
+      const deltaX = e.touches[0].clientX - startX;
+      const deltaY = e.touches[0].clientY - startY;
+
+      // Track velocity for momentum
+      velocityY = deltaX * 0.5;
+      velocityX = -deltaY * 0.5;
+
+      rotationY += velocityY;
+      rotationX += velocityX;
+
+      cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+    });
+
+    document.addEventListener('touchend', () => {
+      if (isDragging) {
+        isDragging = false;
+        setTimeout(() => {
+          autoRotate = true;
+          velocityX = 0;
+          velocityY = 0;
+        }, 2000);
+      }
+    });
+
+    // Reload cube - reset to initial position
+    const reloadBtn = document.getElementById('reloadCube');
+    reloadBtn.addEventListener('click', () => {
+      rotationX = -15;
+      rotationY = 0;
+      autoRotate = true;
+      cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+
+      // Reset project info to first project
+      projectName.textContent = 'Coco Fresh Tea & Juice';
+      projectLink.href = 'project-coco.html';
+    });
+
+    // Cube face click handling
+    const cubeFaces = document.querySelectorAll('.cube-face');
+    const projectName = document.getElementById('projectName');
+    const projectLink = document.getElementById('projectLink');
+
+    cubeFaces.forEach(face => {
+      face.addEventListener('click', (e) => {
+        // Don't trigger click if we were dragging
+        if (hasMoved) {
+          e.preventDefault();
+          return;
+        }
+
+        const name = face.dataset.project;
+        const link = face.dataset.link;
+        const isExternal = face.dataset.external === 'true';
+
+        projectName.textContent = name;
+        projectLink.href = link;
+
+        // Handle external links - open in new tab
+        if (isExternal) {
+          projectLink.target = '_blank';
+          projectLink.rel = 'noopener noreferrer';
+        } else {
+          projectLink.target = '_self';
+          projectLink.removeAttribute('rel');
+        }
+
+        // Add a little animation to show the change
+        projectName.style.opacity = '0';
+        setTimeout(() => {
+          projectName.style.opacity = '1';
+        }, 100);
+      });
+    });
+
+    // Custom cursor
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    // Add enter cursor for links and buttons (excluding coming-soon items)
+    const enterables = document.querySelectorAll('a, button, .btn, .nav-link');
+    enterables.forEach(el => {
+      // Skip if this is inside a coming-soon element
+      if (el.closest('.coming-soon')) return;
+
+      el.addEventListener('mouseenter', () => {
+        cursor.classList.remove('hover', 'coming-soon');
+        cursor.classList.add('enter');
+      });
+      el.addEventListener('mouseleave', () => cursor.classList.remove('enter'));
+    });
+
+    // Add coming-soon cursor for unpublished projects
+    const comingSoonElements = document.querySelectorAll('.coming-soon');
+    comingSoonElements.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.classList.remove('hover', 'enter');
+        cursor.classList.add('coming-soon');
+      });
+      el.addEventListener('mouseleave', () => cursor.classList.remove('coming-soon'));
+
+      // Prevent click
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+    });
+
+    // Add hover effect for other clickable elements
+    const clickables = document.querySelectorAll('.cube-face, .cube-reload');
+    clickables.forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+    });
+
+    // Draggable illustration cards (desktop only)
+    const illustrationCards = document.querySelectorAll('.illustration-card');
+    const isDesktop = () => window.innerWidth > 1200;
+
+    illustrationCards.forEach(card => {
+      let isDragging = false;
+      let startX, startY;
+      let initialX, initialY;
+
+      // Add drag cursor on hover (desktop only)
+      card.addEventListener('mouseenter', () => {
+        if (!isDesktop()) return;
+        cursor.classList.remove('hover');
+        cursor.classList.add('drag');
+      });
+      card.addEventListener('mouseleave', () => {
+        cursor.classList.remove('drag');
+      });
+
+      card.addEventListener('mousedown', (e) => {
+        if (!isDesktop()) return;
+        isDragging = true;
+        startX = e.clientX;
+        startY = e.clientY;
+
+        // Get current position
+        const rect = card.getBoundingClientRect();
+        const parent = card.closest('.illustration-cards').getBoundingClientRect();
+        initialX = rect.left - parent.left;
+        initialY = rect.top - parent.top;
+
+        // Bring card to front
+        illustrationCards.forEach(c => c.style.zIndex = '1');
+        card.style.zIndex = '10';
+      });
+
+      document.addEventListener('mousemove', (e) => {
+        if (!isDragging || !isDesktop()) return;
+
+        const deltaX = e.clientX - startX;
+        const deltaY = e.clientY - startY;
+
+        card.style.left = (initialX + deltaX) + 'px';
+        card.style.top = (initialY + deltaY) + 'px';
+        card.style.right = 'auto';
+      });
+
+      document.addEventListener('mouseup', () => {
+        if (isDragging) {
+          isDragging = false;
+        }
+      });
+
+      // Touch support disabled on smaller screens
+      card.addEventListener('touchstart', (e) => {
+        if (!isDesktop()) return;
+        isDragging = true;
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+
+        const rect = card.getBoundingClientRect();
+        const parent = card.closest('.illustration-cards').getBoundingClientRect();
+        initialX = rect.left - parent.left;
+        initialY = rect.top - parent.top;
+
+        illustrationCards.forEach(c => c.style.zIndex = '1');
+        card.style.zIndex = '10';
+      });
+
+      document.addEventListener('touchmove', (e) => {
+        if (!isDragging || !isDesktop()) return;
+
+        const deltaX = e.touches[0].clientX - startX;
+        const deltaY = e.touches[0].clientY - startY;
+
+        card.style.left = (initialX + deltaX) + 'px';
+        card.style.top = (initialY + deltaY) + 'px';
+        card.style.right = 'auto';
+      });
+
+      document.addEventListener('touchend', () => {
+        isDragging = false;
+      });
+    });
+
+    // Work item hover preview
+    const workItems = document.querySelectorAll('.work-item');
+
+    workItems.forEach(item => {
+      const preview = item.querySelector('.work-preview');
+
+      item.addEventListener('mousemove', (e) => {
+        preview.style.left = (e.clientX + 200) + 'px';
+        preview.style.top = (e.clientY - 100) + 'px';
+      });
+    });
+
+    // Light cursor on dark sections
+    const footer = document.querySelector('.footer');
+
+    footer.addEventListener('mouseenter', () => {
+      cursor.classList.add('light');
+    });
+
+    footer.addEventListener('mouseleave', () => {
+      cursor.classList.remove('light');
+    });
+
+    // Typing animation for section titles and footer title
+    const typingTitles = document.querySelectorAll('.section-title, .footer-title');
+
+    typingTitles.forEach(title => {
+      const originalText = title.textContent.replace('_', '');
+      title.innerHTML = '<span class="typing-text"></span><span class="typing-cursor">_</span>';
+      title.dataset.text = originalText;
+      title.dataset.typed = 'false';
+    });
+
+    function typeText(element) {
+      if (element.dataset.typed === 'true') return;
+      element.dataset.typed = 'true';
+
+      const text = element.dataset.text;
+      const typingText = element.querySelector('.typing-text');
+      let i = 0;
+
+      function type() {
+        if (i < text.length) {
+          typingText.textContent += text.charAt(i);
+          i++;
+          setTimeout(type, 80);
+        }
+      }
+      type();
+    }
+
+    // Intersection Observer for typing animation
+    const titleObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          typeText(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    typingTitles.forEach(title => titleObserver.observe(title));
+
+    // Project Showcase - Scanline Effect
+    const projectShowcase = document.querySelector('.project-showcase');
+    const projectDisplay = document.querySelector('.project-display');
+    const projectScanline = document.querySelector('.project-scanline');
+    const projectBgs = document.querySelectorAll('.project-bg');
+    const projectCardsInner = document.querySelectorAll('.project-cards-stack .project-card-inner');
+    const projectScrollItems = document.querySelectorAll('.project-scroll-item');
+    const projectNavItems = document.querySelectorAll('.project-nav-item');
+    const totalProjects = projectScrollItems.length;
+
+    let currentProject = -1;
+
+    function updateProjectShowcase() {
+      if (!projectShowcase) return;
+
+      const showcaseRect = projectShowcase.getBoundingClientRect();
+      const showcaseTop = -showcaseRect.top;
+      const showcaseHeight = projectShowcase.offsetHeight - window.innerHeight;
+
+      // Calculate which project section we're in
+      const scrollProgress = Math.max(0, Math.min(1, showcaseTop / showcaseHeight));
+      const projectIndex = Math.min(Math.floor(scrollProgress * totalProjects), totalProjects - 1);
+
+      // Calculate progress within current project (0 to 1)
+      const projectProgress = (scrollProgress * totalProjects) - projectIndex;
+
+      // Update scanline position (moves from bottom to top)
+      const scanlinePosition = (1 - projectProgress) * 100;
+      projectScanline.style.bottom = scanlinePosition + '%';
+
+      // Switch project when reaching a new one
+      if (projectIndex !== currentProject && projectIndex >= 0) {
+        currentProject = projectIndex;
+
+        // Update background images
+        projectBgs.forEach((bg, i) => {
+          if (i === currentProject) {
+            bg.classList.add('active');
+          } else {
+            bg.classList.remove('active');
+          }
+        });
+
+        // Update cards - show all cards up to current (stacking effect)
+        projectCardsInner.forEach((card, i) => {
+          if (i <= currentProject) {
+            card.classList.add('active');
+            card.style.zIndex = i + 1; // Stack order
+          } else {
+            card.classList.remove('active');
+          }
+        });
+
+        // Update project nav items
+        projectNavItems.forEach((item, i) => {
+          if (i === currentProject) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+      }
+    }
+
+    // Initialize first project
+    if (projectShowcase) {
+      projectBgs[0]?.classList.add('active');
+      projectCardsInner[0]?.classList.add('active');
+      projectNavItems[0]?.classList.add('active');
+      currentProject = 0;
+    }
+
+    window.addEventListener('scroll', updateProjectShowcase);
+    updateProjectShowcase();
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+    if (hamburger && mobileMenuOverlay) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('is-open');
+        mobileMenuOverlay.classList.toggle('is-open');
+      });
+
+      // Close menu when clicking a link
+      const mobileMenuLinks = mobileMenuOverlay.querySelectorAll('.mobile-menu-link');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('is-open');
+          mobileMenuOverlay.classList.remove('is-open');
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !mobileMenuOverlay.contains(e.target)) {
+          hamburger.classList.remove('is-open');
+          mobileMenuOverlay.classList.remove('is-open');
+        }
+      });
+
+      // Hamburger and CTA scroll behavior - fix to top after scrolling past hero
+      const ctaFixed = document.querySelector('.cta-fixed');
+
+      function updateFixedElementsPosition() {
+        const heroSection = document.querySelector('.hero');
+        if (heroSection) {
+          const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+          if (window.scrollY > heroBottom - 100) {
+            hamburger.classList.add('is-fixed');
+            if (ctaFixed) ctaFixed.classList.add('is-fixed');
+          } else {
+            hamburger.classList.remove('is-fixed');
+            if (ctaFixed) ctaFixed.classList.remove('is-fixed');
+          }
+        }
+      }
+
+      window.addEventListener('scroll', updateFixedElementsPosition);
+      updateFixedElementsPosition();
+    }
+
+  </script>
+</body>
+</html>

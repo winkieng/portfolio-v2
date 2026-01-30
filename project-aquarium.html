@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winkie Ng | Vancouver Aquarium</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/winkie-ng-w.svg">
+  <link rel="apple-touch-icon" href="images/winkie-ng-w.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Fixed W Logo -->
+  <a href="index.html" class="nav-logo-fixed is-visible">
+    <img src="images/winkie-ng-w.svg" alt="W" class="nav-logo-img">
+  </a>
+
+  <!-- Navigation -->
+  <nav class="nav-scroll is-fixed" id="nav">
+    <div class="nav-container">
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="works.html" class="nav-link active">Works</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="playground.html" class="nav-link">Playground</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hamburger Menu Button (tablet/mobile) -->
+  <button class="hamburger is-fixed" id="hamburger" aria-label="Toggle menu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-content">
+      <a href="index.html" class="mobile-menu-link">Home</a>
+      <a href="works.html" class="mobile-menu-link active">Works</a>
+      <a href="profile.html" class="mobile-menu-link">Profile</a>
+      <a href="contact.html" class="mobile-menu-link">Contact</a>
+      <a href="playground.html" class="mobile-menu-link">Playground</a>
+    </div>
+  </div>
+
+  <!-- Fixed CTA Buttons -->
+  <div class="cta-fixed">
+    <a href="#" class="btn btn-dark">Linkedin <span class="btn-arrow"></span></a>
+    <a href="#" class="btn btn-dark">Resume <span class="btn-arrow"></span></a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="project-hero">
+    <img src="images/placeholder-dark.png" alt="Vancouver Aquarium" class="placeholder-img placeholder-img-hero-aquarium">
+    <div class="project-hero-content">
+      <!-- Hero content can include project imagery -->
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section class="project-overview">
+    <div class="overview-content">
+      <div class="overview-left">
+        <div class="section-header-project fade-up">
+          <h1 class="project-page-title">Vancouver Aquarium<span class="blink">_</span></h1>
+          <div class="barcode-short"></div>
+        </div>
+        <div class="project-intro fade-up fade-up-delay-1">
+          <p>Project description coming soon.</p>
+        </div>
+      </div>
+      <div class="overview-right fade-up fade-up-delay-2">
+        <div class="details-card">
+          <div class="details-card-header">
+            <span>project_details</span>
+          </div>
+          <div class="details-card-content">
+            <div class="details-info">
+              <p>Project Type: School Project</p>
+              <p>My Role: UX/UI Designer</p>
+              <p>Deliverable: Website Redesign</p>
+              <p>Tools: Figma</p>
+            </div>
+            <div class="details-tags">
+              <span class="tag">UX/UI Design</span>
+              <span class="tag">2023 Fall</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- More Projects Section -->
+  <section class="more-projects">
+    <div class="more-projects-content">
+      <a href="project-zen.html" class="btn btn-dark"><span class="btn-arrow-left"></span> Previous</a>
+      <a href="project-coco.html" class="btn btn-dark">Next <span class="btn-arrow"></span></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <h2 class="footer-title">Thank you for your curiosity<span class="blink">_</span></h2>
+      <a href="contact.html" class="btn btn-light">Contact Me <span class="btn-arrow-dark"></span></a>
+    </div>
+    <div class="footer-bottom">
+      <div class="barcode"></div>
+      <p class="copyright">&copy; 2026 a personal creation - designed and coded by Winkie Ng. All right reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop"></a>
+
+  <script>
+    // Scroll fade-up animations
+    const fadeUpElements = document.querySelectorAll('.fade-up');
+
+    const fadeUpObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          fadeUpObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    });
+
+    fadeUpElements.forEach(el => {
+      fadeUpObserver.observe(el);
+    });
+
+    // Back to Top button
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('is-visible');
+      } else {
+        backToTop.classList.remove('is-visible');
+      }
+
+      const footer = document.querySelector('.footer');
+      const footerRect = footer.getBoundingClientRect();
+      const buttonRect = backToTop.getBoundingClientRect();
+
+      if (buttonRect.bottom > footerRect.top) {
+        backToTop.classList.add('light');
+      } else {
+        backToTop.classList.remove('light');
+      }
+    });
+
+    backToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Custom cursor
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    // Add enter cursor for links and buttons
+    const enterables = document.querySelectorAll('a, button, .btn, .nav-link');
+    enterables.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.classList.remove('hover');
+        cursor.classList.add('enter');
+      });
+      el.addEventListener('mouseleave', () => cursor.classList.remove('enter'));
+    });
+
+    // Light cursor on footer
+    const footer = document.querySelector('.footer');
+    footer.addEventListener('mouseenter', () => cursor.classList.add('light'));
+    footer.addEventListener('mouseleave', () => cursor.classList.remove('light'));
+
+    // Dark section detection for fixed elements (logo and CTA buttons)
+    const navLogo = document.querySelector('.nav-logo-fixed');
+    const ctaFixed = document.querySelector('.cta-fixed');
+    const darkSections = document.querySelectorAll('.footer, [data-dark="true"]');
+
+    function checkDarkSections() {
+      const logoRect = navLogo.getBoundingClientRect();
+      const ctaRect = ctaFixed.getBoundingClientRect();
+
+      let logoInDark = false;
+      let ctaInDark = false;
+
+      darkSections.forEach(section => {
+        const sectionRect = section.getBoundingClientRect();
+
+        if (logoRect.bottom > sectionRect.top && logoRect.top < sectionRect.bottom) {
+          logoInDark = true;
+        }
+
+        if (ctaRect.bottom > sectionRect.top && ctaRect.top < sectionRect.bottom) {
+          ctaInDark = true;
+        }
+      });
+
+      navLogo.classList.toggle('light', logoInDark);
+      ctaFixed.classList.toggle('light', ctaInDark);
+    }
+
+    window.addEventListener('scroll', checkDarkSections);
+    checkDarkSections();
+
+    // Typing animation for section titles and footer title
+    const typingTitles = document.querySelectorAll('.section-title, .section-title-dark, .footer-title, .project-page-title');
+
+    typingTitles.forEach(title => {
+      const originalText = title.textContent.replace('_', '');
+      title.innerHTML = '<span class="typing-text"></span><span class="typing-cursor">_</span>';
+      title.dataset.text = originalText;
+      title.dataset.typed = 'false';
+    });
+
+    function typeText(element) {
+      if (element.dataset.typed === 'true') return;
+      element.dataset.typed = 'true';
+
+      const text = element.dataset.text;
+      const typingText = element.querySelector('.typing-text');
+      let i = 0;
+
+      function type() {
+        if (i < text.length) {
+          typingText.textContent += text.charAt(i);
+          i++;
+          setTimeout(type, 80);
+        }
+      }
+      type();
+    }
+
+    const titleObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          typeText(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    typingTitles.forEach(title => titleObserver.observe(title));
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+    if (hamburger && mobileMenuOverlay) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('is-open');
+        mobileMenuOverlay.classList.toggle('is-open');
+      });
+
+      // Close menu when clicking a link
+      const mobileMenuLinks = mobileMenuOverlay.querySelectorAll('.mobile-menu-link');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('is-open');
+          mobileMenuOverlay.classList.remove('is-open');
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !mobileMenuOverlay.contains(e.target)) {
+          hamburger.classList.remove('is-open');
+          mobileMenuOverlay.classList.remove('is-open');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

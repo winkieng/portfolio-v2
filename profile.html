@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winkie Ng | Profile</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/winkie-ng-w.svg">
+  <link rel="apple-touch-icon" href="images/winkie-ng-w.svg">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Learn about Winkie Ng, a visual designer based in Vancouver, BC. Specializing in UI/UX design, brand identity, typography, illustration, and motion graphics.">
+  <meta name="keywords" content="about Winkie Ng, visual designer Vancouver, UI UX designer, brand identity, graphic designer, illustration, portfolio">
+  <meta name="author" content="Winkie Ng">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://winkieng.com/profile.html">
+  <meta property="og:title" content="About Winkie Ng | Visual Designer">
+  <meta property="og:description" content="Learn about Winkie Ng, a visual designer based in Vancouver, BC specializing in UI/UX design and illustration.">
+  <meta property="og:image" content="https://winkieng.com/images/winkie-ng-full.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Winkie Ng | Visual Designer">
+  <meta name="twitter:description" content="Learn about Winkie Ng, a visual designer based in Vancouver, BC.">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://winkieng.com/profile.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Fixed CTA Buttons -->
+  <div class="cta-fixed">
+    <a href="#" class="btn btn-dark">Linkedin <span class="btn-arrow"></span></a>
+    <a href="#" class="btn btn-dark">Resume <span class="btn-arrow"></span></a>
+  </div>
+
+  <!-- Fixed W Logo - always visible on profile page -->
+  <a href="index.html" class="nav-logo-fixed is-visible">
+    <img src="images/winkie-ng-w.svg" alt="W" class="nav-logo-img">
+  </a>
+
+  <!-- Navigation - always fixed on profile page -->
+  <nav class="nav-scroll is-fixed" id="nav">
+    <div class="nav-container">
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="works.html" class="nav-link">Works</a>
+        <a href="profile.html" class="nav-link active">Profile</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="playground.html" class="nav-link">Playground</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hamburger Menu Button (tablet/mobile) -->
+  <button class="hamburger is-fixed" id="hamburger" aria-label="Toggle menu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-content">
+      <a href="index.html" class="mobile-menu-link">Home</a>
+      <a href="works.html" class="mobile-menu-link">Works</a>
+      <a href="profile.html" class="mobile-menu-link active">Profile</a>
+      <a href="contact.html" class="mobile-menu-link">Contact</a>
+      <a href="playground.html" class="mobile-menu-link">Playground</a>
+    </div>
+  </div>
+
+  <!-- Profile Hero -->
+  <section class="profile-hero">
+    <div class="profile-hero-content">
+      <h1 class="profile-title fade-up">Hello, I'm Winkie</h1>
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section class="profile-bio">
+    <div class="bio-container">
+      <div class="bio-image-card fade-up">
+        <div class="bio-card-header">
+          <span>profile_01</span>
+          <span class="card-close">&times;</span>
+        </div>
+        <div class="bio-card-image">
+          <img src="images/profile/profile.png" alt="Winkie Ng" class="placeholder-img placeholder-img-bio">
+        </div>
+      </div>
+      <div class="bio-content fade-up fade-up-delay-1">
+        <h2 class="bio-greeting">Design is what I do, Drawing is who I am</h2>
+        <div class="bio-text">
+          <p>A visual designer based in Vancouver, BC with a passion for creating meaningful and engaging digital experiences. With a background in Interactive Arts & Technology from Simon Fraser University, I blend creativity with strategic thinking to craft designs that resonate.</p>
+          <p>I believe in the power of design to tell stories, solve problems, and connect people with the world around them. Whether it's building brand identities, designing packaging, or creating digital experiences, I approach every project with curiosity and attention to detail.</p>
+          <p>When I'm not pushing pixels, you'll find me sketching in coffee shops, exploring local bookstores, or seeking inspiration through travel. I'm always excited to collaborate on projects that challenge conventions and create lasting impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="profile-skills">
+    <div class="skills-container">
+      <div class="section-header-project fade-up">
+        <h2 class="section-title">Skills & Tools<span class="blink">_</span></h2>
+        <div class="barcode-short"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card fade-up fade-up-delay-1">
+          <div class="skill-card-header">
+            <span>design_skills</span>
+          </div>
+          <div class="skill-card-content">
+            <ul class="skill-list">
+              <li>Visual Design</li>
+              <li>Graphic Design</li>
+              <li>Brand Identity</li>
+              <li>Typography</li>
+              <li>Illustration</li>
+              <li>Website Design & Development</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-2">
+          <div class="skill-card-header">
+            <span>tools</span>
+          </div>
+          <div class="skill-card-content">
+            <ul class="skill-list">
+              <li>Adobe Illustrator</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe InDesign</li>
+              <li>Figma</li>
+              <li>Canva</li>
+              <li>HTML/CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-3">
+          <div class="skill-card-header">
+            <span>soft_skills</span>
+          </div>
+          <div class="skill-card-content">
+            <ul class="skill-list">
+              <li>Creative Problem Solving</li>
+              <li>Collaboration</li>
+              <li>Communication</li>
+              <li>Time Management</li>
+              <li>Attention to Detail</li>
+              <li>Adaptability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="profile-experience">
+    <div class="experience-container">
+      <div class="section-header-project fade-up">
+        <h2 class="section-title-dark">Experience<span class="blink">_</span></h2>
+        <div class="barcode-short-light"></div>
+      </div>
+      <div class="experience-list">
+        <div class="experience-item fade-up fade-up-delay-1">
+          <div class="experience-row">
+            <span class="experience-role">Digital Designer & Project Lead (Permemnant Full-Time)</span>
+            <span class="experience-company">5U Website</span>
+            <span class="experience-date">2025 May - Present</span>
+          </div>
+          <p class="experience-desc">Design and produce websites, brochures, posters, and digital marketing materials aligned with clients’ brand standards. Support ongoing website content updates, social media posts and accessibility improvements, ensuring cohesive visual communication. </p>
+        </div>
+        <div class="experience-item fade-up fade-up-delay-2">
+          <div class="experience-row">
+            <span class="experience-role">Graphic Designer (Freelance)</span>
+            <span class="experience-company">Exzell Pharma</span>
+            <span class="experience-date">2025 Mar - Present</span>
+          </div>
+          <p class="experience-desc">Create packaging, brochures, and marketing materials for multiple product lines. Support marketing campaigns through inclusive, accessible, and cohesive design for public audiences. </p>
+        </div>
+        <div class="experience-item fade-up fade-up-delay-3">
+          <div class="experience-row">
+            <span class="experience-role">Social Media & Marketing (Internship)</span>
+            <span class="experience-company">Langley Farm Market</span>
+            <span class="experience-date">2024 May - Dec</span>
+          </div>
+          <p class="experience-desc">Designed a comprehensive brand guideline for digital and print platforms, improving branding consistency across channels. Produced social media templates and content</p>
+        </div>
+        <div class="experience-item fade-up fade-up-delay-4">
+          <div class="experience-row">
+            <span class="experience-role">Graphic Designer (Freelance)</span>
+            <span class="experience-company">Coco Fresh Tea & Juice</span>
+            <span class="experience-date">2023 Jul - 2024 Nov</span>
+          </div>
+          <p class="experience-desc">Designed a comprehensive brand guideline for digital and print platforms, improving branding consistency across channels. Produced social media templates and content</p>
+        </div>
+        <div class="experience-item fade-up fade-up-delay-5">
+          <div class="experience-row">
+            <span class="experience-role">Graphic Designer (Contracted Part-Time)</span>
+            <span class="experience-company">SUNÉ</span>
+            <span class="experience-date">2023 Sep - 2024 Apr</span>
+          </div>
+          <p class="experience-desc">Created brand guidelines, product packaging, and character designs, ensuring a cohesive and recognizable brand image.</p>
+        </div>
+        <div class="experience-item fade-up fade-up-delay-6">
+          <div class="experience-row">
+            <span class="experience-role">Multimedia Designer & Illustrator (Co-op)</span>
+            <span class="experience-company">Zen Maker Lab</span>
+            <span class="experience-date">2021 May - 2022 Aug</span>
+          </div>
+          <p class="experience-desc">Designed educational graphics and 3D models for internal teams and external clients, improving project completion rates. Developed marketing materials and created a company mascot, strengthening brand recognition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="profile-education">
+    <div class="education-container">
+      <div class="section-header-project fade-up">
+        <h2 class="section-title">Education<span class="blink">_</span></h2>
+        <div class="barcode-short"></div>
+      </div>
+      <div class="education-cards">
+        <div class="education-card fade-up fade-up-delay-1">
+          <div class="education-card-header">
+            <span>degree_01</span>
+            <span class="card-close">&times;</span>
+          </div>
+          <div class="education-card-content">
+            <h3 class="education-degree">Bachelor of Arts - Interactive Arts & Technology, Design Concentration</h3>
+            <p class="education-school">Simon Fraser University</p>
+            <p class="education-year">2018-2023</p>
+          </div>
+        </div>
+        <div class="education-card fade-up fade-up-delay-2">
+          <div class="education-card-header">
+            <span>degree_02</span>
+            <span class="card-close">&times;</span>
+          </div>
+          <div class="education-card-content">
+            <h3 class="education-degree">Minor - Digital & Print Publishing</h3>
+            <p class="education-school">Simon Fraser University</p>
+            <p class="education-year">2021-2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests Section -->
+  <section class="profile-interests">
+    <div class="interests-container">
+      <div class="section-header-project fade-up">
+        <h2 class="section-title">Beyond Design<span class="blink">_</span></h2>
+        <div class="barcode-short"></div>
+      </div>
+      <p class="interests-intro fade-up fade-up-delay-1">When I'm not designing, you can find me...</p>
+      <div class="interests-layout fade-up fade-up-delay-2">
+        <div class="interests-tags">
+          <span class="interest-tag" data-image="images/placeholder-dark.png"><span class="tag-channel">CH 01</span> Sketching</span>
+          <span class="interest-tag" data-image="images/placeholder-light.png"><span class="tag-channel">CH 02</span> Bookstores</span>
+          <span class="interest-tag" data-image="images/placeholder-dark.png"><span class="tag-channel">CH 03</span> Coffee</span>
+          <span class="interest-tag" data-image="images/placeholder-light.png"><span class="tag-channel">CH 04</span> Music</span>
+          <span class="interest-tag" data-image="images/placeholder-dark.png"><span class="tag-channel">CH 05</span> Travel</span>
+        </div>
+        <!-- VIDEO VERSION (uncomment to use videos instead of images)
+        <div class="interests-tags">
+          <span class="interest-tag" data-video="videos/sketching.mp4"><span class="tag-channel">CH 01</span> Sketching</span>
+          <span class="interest-tag" data-video="videos/bookstores.mp4"><span class="tag-channel">CH 02</span> Bookstores</span>
+          <span class="interest-tag" data-video="videos/coffee.mp4"><span class="tag-channel">CH 03</span> Coffee</span>
+          <span class="interest-tag" data-video="videos/music.mp4"><span class="tag-channel">CH 04</span> Music</span>
+          <span class="interest-tag" data-video="videos/travel.mp4"><span class="tag-channel">CH 05</span> Travel</span>
+        </div>
+        -->
+        <!-- Retro TV -->
+        <div class="retro-tv">
+          <div class="tv-body">
+            <div class="tv-screen-wrapper">
+              <div class="tv-screen">
+                <div class="tv-static"></div>
+                <div class="tv-scanlines"></div>
+                <div class="tv-channel">CH 01</div>
+                <img src="images/placeholder-light.png" alt="Interest preview" class="tv-image">
+              </div>
+            </div>
+            <div class="tv-side-panel">
+              <div class="tv-knob"></div>
+              <div class="tv-knob"></div>
+              <div class="tv-speaker"></div>
+            </div>
+          </div>
+          <div class="tv-feet">
+            <div class="tv-foot"></div>
+            <div class="tv-foot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h2 class="footer-title">Thank you for your curiosity<span class="blink">_</span></h2>
+      <a href="contact.html" class="btn btn-light">Contact Me <span class="btn-arrow-dark"></span></a>
+    </div>
+    <div class="footer-bottom">
+      <div class="barcode"></div>
+      <p class="copyright">&copy; 2026 a personal creation - designed and coded by Winkie Ng. All right reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop"></a>
+
+  <script>
+    // Back to Top button
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('is-visible');
+      } else {
+        backToTop.classList.remove('is-visible');
+      }
+
+      // Check if back-to-top button is over the footer
+      const footer = document.querySelector('.footer');
+      const footerRect = footer.getBoundingClientRect();
+      const buttonRect = backToTop.getBoundingClientRect();
+
+      if (buttonRect.bottom > footerRect.top) {
+        backToTop.classList.add('light');
+      } else {
+        backToTop.classList.remove('light');
+      }
+    });
+
+    backToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Custom cursor
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    // Add enter cursor for links and buttons
+    const enterables = document.querySelectorAll('a, button, .btn, .nav-link');
+    enterables.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.classList.remove('hover');
+        cursor.classList.add('enter');
+      });
+      el.addEventListener('mouseleave', () => cursor.classList.remove('enter'));
+    });
+
+    // Footer cursor color change
+    const footer = document.querySelector('.footer');
+    footer.addEventListener('mouseenter', () => {
+      cursor.classList.add('light');
+    });
+
+    footer.addEventListener('mouseleave', () => {
+      cursor.classList.remove('light');
+    });
+
+    // Experience section cursor color change
+    const experienceSection = document.querySelector('.profile-experience');
+    experienceSection.addEventListener('mouseenter', () => {
+      cursor.classList.add('light');
+    });
+
+    experienceSection.addEventListener('mouseleave', () => {
+      cursor.classList.remove('light');
+    });
+
+    // Dark section detection for fixed elements (logo and CTA buttons)
+    const navLogo = document.querySelector('.nav-logo-fixed');
+    const ctaFixed = document.querySelector('.cta-fixed');
+    const darkSections = document.querySelectorAll('.footer, .profile-experience, [data-dark="true"]');
+
+    function checkDarkSections() {
+      const logoRect = navLogo.getBoundingClientRect();
+      const ctaRect = ctaFixed.getBoundingClientRect();
+
+      let logoInDark = false;
+      let ctaInDark = false;
+
+      darkSections.forEach(section => {
+        const sectionRect = section.getBoundingClientRect();
+
+        if (logoRect.bottom > sectionRect.top && logoRect.top < sectionRect.bottom) {
+          logoInDark = true;
+        }
+
+        if (ctaRect.bottom > sectionRect.top && ctaRect.top < sectionRect.bottom) {
+          ctaInDark = true;
+        }
+      });
+
+      navLogo.classList.toggle('light', logoInDark);
+      ctaFixed.classList.toggle('light', ctaInDark);
+    }
+
+    window.addEventListener('scroll', checkDarkSections);
+    checkDarkSections();
+
+    // Scroll fade-up animations
+    const fadeUpElements = document.querySelectorAll('.fade-up');
+
+    const fadeUpObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          fadeUpObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    });
+
+    fadeUpElements.forEach(el => {
+      fadeUpObserver.observe(el);
+    });
+
+    // Typing animation for section titles and footer title
+    const typingTitles = document.querySelectorAll('.section-title, .section-title-dark, .footer-title');
+
+    typingTitles.forEach(title => {
+      const originalText = title.textContent.replace('_', '');
+      title.innerHTML = '<span class="typing-text"></span><span class="typing-cursor">_</span>';
+      title.dataset.text = originalText;
+      title.dataset.typed = 'false';
+    });
+
+    function typeText(element) {
+      if (element.dataset.typed === 'true') return;
+      element.dataset.typed = 'true';
+
+      const text = element.dataset.text;
+      const typingText = element.querySelector('.typing-text');
+      let i = 0;
+
+      function type() {
+        if (i < text.length) {
+          typingText.textContent += text.charAt(i);
+          i++;
+          setTimeout(type, 80);
+        }
+      }
+      type();
+    }
+
+    const titleObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          typeText(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    typingTitles.forEach(title => titleObserver.observe(title));
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+    if (hamburger && mobileMenuOverlay) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('is-open');
+        mobileMenuOverlay.classList.toggle('is-open');
+      });
+
+      // Close menu when clicking a link
+      const mobileMenuLinks = mobileMenuOverlay.querySelectorAll('.mobile-menu-link');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('is-open');
+          mobileMenuOverlay.classList.remove('is-open');
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !mobileMenuOverlay.contains(e.target)) {
+          hamburger.classList.remove('is-open');
+          mobileMenuOverlay.classList.remove('is-open');
+        }
+      });
+    }
+
+    // Interest tag click - Retro TV (click to lock image)
+    const interestTags = document.querySelectorAll('.interest-tag');
+    const tvImage = document.querySelector('.tv-image');
+    const tvChannel = document.querySelector('.tv-channel');
+    let activeTag = null;
+
+    if (interestTags.length && tvImage && tvChannel) {
+      interestTags.forEach(tag => {
+        // Hover - show preview (only if no tag is locked)
+        tag.addEventListener('mouseenter', () => {
+          if (activeTag) return; // Don't change if a tag is locked
+          const imageSrc = tag.dataset.image;
+          const channelSpan = tag.querySelector('.tag-channel');
+          const channelNum = channelSpan ? channelSpan.textContent : 'CH 01';
+          if (imageSrc) {
+            tvImage.src = imageSrc;
+            tvImage.classList.add('is-visible');
+            tvChannel.textContent = channelNum;
+            tvChannel.classList.add('is-visible');
+          }
+        });
+
+        tag.addEventListener('mouseleave', () => {
+          if (activeTag) return; // Don't hide if a tag is locked
+          tvImage.classList.remove('is-visible');
+          tvChannel.classList.remove('is-visible');
+        });
+
+        // Click - lock/unlock image
+        tag.addEventListener('click', () => {
+          const imageSrc = tag.dataset.image;
+          const channelSpan = tag.querySelector('.tag-channel');
+          const channelNum = channelSpan ? channelSpan.textContent : 'CH 01';
+
+          // If clicking the same tag, unlock it
+          if (activeTag === tag) {
+            activeTag.classList.remove('is-active');
+            activeTag = null;
+            tvImage.classList.remove('is-visible');
+            tvChannel.classList.remove('is-visible');
+            return;
+          }
+
+          // Remove active state from previous tag
+          if (activeTag) {
+            activeTag.classList.remove('is-active');
+          }
+
+          // Lock this tag
+          activeTag = tag;
+          tag.classList.add('is-active');
+          if (imageSrc) {
+            tvImage.src = imageSrc;
+            tvImage.classList.add('is-visible');
+            tvChannel.textContent = channelNum;
+            tvChannel.classList.add('is-visible');
+          }
+        });
+      });
+    }
+
+    /* VIDEO VERSION (uncomment to use videos instead of images)
+    // Replace the <img class="tv-image"> with <video class="tv-video" muted loop playsinline></video> in HTML
+    const tvVideo = document.querySelector('.tv-video');
+
+    if (interestTags.length && tvVideo && tvChannel) {
+      interestTags.forEach(tag => {
+        tag.addEventListener('mouseenter', () => {
+          const videoSrc = tag.dataset.video;
+          const channelSpan = tag.querySelector('.tag-channel');
+          const channelNum = channelSpan ? channelSpan.textContent : 'CH 01';
+          if (videoSrc) {
+            tvVideo.src = videoSrc;
+            tvVideo.play();
+            tvVideo.classList.add('is-visible');
+            tvChannel.textContent = channelNum;
+            tvChannel.classList.add('is-visible');
+          }
+        });
+
+        tag.addEventListener('mouseleave', () => {
+          tvVideo.pause();
+          tvVideo.classList.remove('is-visible');
+          tvChannel.classList.remove('is-visible');
+        });
+      });
+    }
+    */
+  </script>
+</body>
+</html>
